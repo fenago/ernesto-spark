@@ -85,7 +85,7 @@ In this task let us implement a untyped UDAF. The untyped UDAF is used with Data
 
 ratings_head.csv - http://bit.ly/2X3r2wb
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_9` to view file.
 
 
 **Step 2:** Create a new Scala object and name it averageUDAF. Next, we will need the following imports to implement a UADF. We haven't used some of these imports so far. We shall learn about them as we continue with our program.

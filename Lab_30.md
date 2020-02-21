@@ -65,7 +65,7 @@ Let us first read and write text files to Spark using the RDD API.
 
 treasure_island.txt - http://bit.ly/2LBFLtt
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 ## RDD API
 
@@ -91,12 +91,12 @@ This will read the data and create an RDD[String] as shown below. We can read da
 
 Let us now check if the save was successful. For that open a new terminal and check the contents using the command below.
 
-`ls ~/apache-spark/Files/chapter_10/output`
+`ls ~/ernesto-spark/Files/chapter_10/output`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
  
 
-`cat ~/apache-spark/Files/chapter_10/output/part-00000`
+`cat ~/ernesto-spark/Files/chapter_10/output/part-00000`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
  
@@ -108,7 +108,7 @@ Run above command in **terminal 2**. You can also open New terminal by Clicking 
 
 books - http://bit.ly/2kupo5v
 
-**Note:** We already have cloned a github repository which contains a required files. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required files. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 **Step 4:** Let us read these files using the wholeTextFiles method. This will read all the files present in books folder. Please switch back to Spark-shell and read the files using the code below.
 

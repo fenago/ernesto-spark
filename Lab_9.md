@@ -76,7 +76,7 @@ Let us start this exercise by executing a program which computes the average rat
 
 ratings.csv - http://bit.ly/2QmnAH9
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_5` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_5` to view file.
 
 **Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/avgRatings.scala` to view scala file.
 

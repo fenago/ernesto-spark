@@ -68,7 +68,7 @@ Let us now look at reading and writing CSV files to Spark. We have been reading 
 
 ratings.csv - http://bit.ly/2L8IEBS
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 Each line of this file represents one rating of one movie by one user, and has the following format: userId, movieId, rating, timestamp
 
@@ -155,7 +155,7 @@ JSON is also one of the popular file formats around which stands for JavaScrit O
 
 example_1.json - http://bit.ly/2lRFI06
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 
 **Step 2:** The following code is used to read the single line JSON file.
@@ -183,7 +183,7 @@ Enter into the paste mode and execute the following code.
 
 example_2.json - http://bit.ly/2lL3IST
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 
 **Step 5:** The following code is used to read the single line JSON file.

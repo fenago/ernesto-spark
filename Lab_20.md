@@ -98,7 +98,7 @@ Creating a Dataset is similar to that of a DataFrame with some minor changes.
 
 ratings-head.csv - http://bit.ly/2FPdhHE
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_8` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_8` to view file.
 
 ## Creating Dataset using Data Source API...
 

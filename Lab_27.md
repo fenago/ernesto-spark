@@ -92,7 +92,7 @@ Let's have a look how to write a user defined function. We will be writing a use
 
 ratings_head.csv - http://bit.ly/2X3r2wb
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_9` to view file.
 
 
 **Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/decrRatingUDF.scala` to view scala file.

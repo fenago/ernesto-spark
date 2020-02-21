@@ -114,7 +114,7 @@ We are creating an immutable variable called sc which cotains the SparkContext o
 **Step 8:** We now have a SparkContext object created. We can now use this object and load data using the textFile API as we have done in the Spark Shell. 
  
 
-We already have cloned a github repository which contains a text file `treasure_island.txt`. Open `apache-spark/Files/chapter_4/treasure_island.txt` to view text file. Write the following line of code to load the file to create an RDD.
+We already have cloned a github repository which contains a text file `treasure_island.txt`. Open `~/work/ernesto-spark/Files/chapter_4/treasure_island.txt` to view text file. Write the following line of code to load the file to create an RDD.
 
 ```
 val data = sc.textFile("chapter_4/treasure_island.txt")
@@ -204,9 +204,9 @@ We shall be saving the output to the following path IdeaProjects/Spark/chapter_4
 
 Open the `part-00000` file and you should see the result as shown below.
 
-`ls ~/apache-spark/chapter_4/word_count/output` 
+`ls ~/ernesto-spark/chapter_4/word_count/output` 
 
-`cat ~/apache-spark/chapter_4/word_count/output/part-00000` 
+`cat ~/ernesto-spark/chapter_4/word_count/output/part-00000` 
 
 ## Spark Program – Lineage Graph
 

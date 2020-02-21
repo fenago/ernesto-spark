@@ -82,7 +82,7 @@ Please see that this is implementation of Accumulators in Spark 2.x. There will 
 
 Ratings-malformed.csv - http://bit.ly/2WuTese
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_6` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_6` to view file.
 
 
 **Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/countersV2.scala` to view scala file.

@@ -84,7 +84,7 @@ Let us write and use a Typeds UDAF. The Typed UDAF is used on Datasets where we 
  
 ratings_head.csv - http://bit.ly/2X3r2wb
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_9` to view file.
 
 
 **Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/averageTypedUDAF.scala` to view scala file.

@@ -97,12 +97,12 @@ This will create and RDD[(String, Int)] as shown below.
 You may run a cat command from another terminal to check if the save was successful, but the file will not be human readable.
 
 
-`ls ~/apache-spark/Files/chapter_10/seqOut`
+`ls ~/ernesto-spark/Files/chapter_10/seqOut`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 
-`cat ~/apache-spark/Files/chapter_10/seqOut/part*`
+`cat ~/ernesto-spark/Files/chapter_10/seqOut/part*`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
@@ -184,7 +184,7 @@ Hadoop files are the output of Hadoop MapReduce jobs. We can read Hadoop files w
 
 part-r-00000 - http://bit.ly/2lSqdFy
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 This file is the output of a Word Count MapReduce job. It contains words as keys and values as the count separated by tab
 

@@ -82,7 +82,7 @@ Parquet is Spark's default file format. Let us read and write Parquet files in S
 
 userdata1.parquet - http://bit.ly/2kfIhJ4
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 
 **Step 2:** Let us no read this Parquet file to Spark using the code below.
@@ -145,7 +145,7 @@ spark.read
 
 userdata1.orc - http://bit.ly/2kfQi0J
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_10` to view file.
 
 **Step 2:** Reading an ORC file is similar to what we have been doing so far through out this exercise.
 

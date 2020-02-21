@@ -78,7 +78,7 @@ As we did in the previous scenario to create an DataFrame from an RDD, we shall 
 
 mlb_players.csv - http://bit.ly/2JhzVJj
 
-**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_8` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_8` to view file.
 
 ## Creating Dataset from an RDD...
 

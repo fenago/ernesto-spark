@@ -175,9 +175,9 @@ Now run the program as you did in the previous task and check the output directo
 
 #### Output Files
 
-`ls ~/apache-spark/Files/chapter_7/output` 
+`ls ~/ernesto-spark/Files/chapter_7/output` 
 
-`cat ~/apache-spark/Files/chapter_7/output/part-*` 
+`cat ~/ernesto-spark/Files/chapter_7/output/part-*` 
 
 Open the `part-00000-<guid>` file and you should see the result.
 
