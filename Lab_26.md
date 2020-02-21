@@ -103,7 +103,7 @@ We have defined a function called sum which adds two numbers. Instead of passing
 
 `def prod(a: Int) = (b: Int) => a * b`
 
-![](./Screenshots/Chapter 9/Selection_004.png) 
+![](./Screenshots/Chapter_9/Selection_004.png) 
 
 As you can see from the screenshot above, we have declared a prod function which only takes one parameter a and returns another function which in turn takes another parameter b and returns the result.
 
@@ -113,7 +113,7 @@ As you can see from the screenshot above, we have declared a prod function which
 `prod(54)(22)`
 
  
- ![](./Screenshots/Chapter 9/Selection_005.png)
+ ![](./Screenshots/Chapter_9/Selection_005.png)
 
 Task is complete!
 
@@ -127,7 +127,7 @@ Let us now see how we can use the curried function and apply them partially.
 
 This will return us a function object as shown in the screenshot below.
  
- ![](./Screenshots/Chapter 9/Selection_007.png)
+ ![](./Screenshots/Chapter_9/Selection_007.png)
 
 The _ is used as a placeholder for the parameter we are holding back. It indicates the compiler that we are partially applying a function. 
 
@@ -145,7 +145,7 @@ We can then pass the held back parameters at a later time as shown below.
 
 `sumProdObj(7, 8)`
 
-![](./Screenshots/Chapter 9/Selection_009.png)
+![](./Screenshots/Chapter_9/Selection_009.png)
 
 The result is as shown in the screenshot above.
 

@@ -84,7 +84,7 @@ Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}
 
 This will create and RDD[(String, Int)] as shown below.
 
-![](./Screenshots/Chapter 10/Selection_019.png)
+![](./Screenshots/Chapter_10/Selection_019.png)
  
 
 
@@ -132,7 +132,7 @@ Enter into the paste mode and execute the following code.
 }
 ```{{execute T1}}
 
-![](./Screenshots/Chapter 10/Selection_022.png)
+![](./Screenshots/Chapter_10/Selection_022.png)
 
 As you can see from the screenshot above, we now have the RDD[(String, Int)]. We can now simply perform all the operations we usually do on RDDs. We have to use the toString method when converting from Hadoop's Text type and the get method for other data types.
 
@@ -140,7 +140,7 @@ As you can see from the screenshot above, we now have the RDD[(String, Int)]. We
 
 `newRDD.collect()`{{execute T1}}
  
-![](./Screenshots/Chapter 10/Selection_023.png)
+![](./Screenshots/Chapter_10/Selection_023.png)
 
 With this we have successfully written and read the Sequence files.
 
@@ -192,7 +192,7 @@ import org.apache.hadoop.mapred.KeyValueTextInputFormat```{{execute T1}}
 
 `val hadoopData = sc.hadoopFile[Text, Text, KeyValueTextInputFormat]("/home/jovyan/work/ernesto-spark/Files/chapter_10/part-r-00000")`{{execute T1}} 
 
-![](./Screenshots/Chapter 10/Selection_025.png)
+![](./Screenshots/Chapter_10/Selection_025.png)
 
 We now have an RDD from Hadoop MapReduce output. However, in order to access the key value pairs, we have to first convert them to the Java datatypes as we did with the Sequence files.
 
@@ -210,13 +210,13 @@ Enter into the paste mode and execute the following code.
 ```{{execute T1}}
 
  
-![](./Screenshots/Chapter 10/Selection_026.png) 
+![](./Screenshots/Chapter_10/Selection_026.png) 
 
 **Step 5:** Finally let us call the collect method and check the output from the RDD.
 
 `hadoopRDD.collect()`{{execute T1}}
 
-![](./Screenshots/Chapter 10/Selection_027.png)
+![](./Screenshots/Chapter_10/Selection_027.png)
 
 As you can see from the screenshot above, we were successfully able to read the key value pairs from the MapReduce output.
 

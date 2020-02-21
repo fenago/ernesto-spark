@@ -120,7 +120,7 @@ There are not many differences when it comes between val and def keyword to defi
 
 The program at this point of time should look like the screenshot as shown below.
 
-![](./Screenshots/Chapter 9/Selection_010.png)
+![](./Screenshots/Chapter_9/Selection_010.png)
 
 
 
@@ -155,7 +155,7 @@ val ratings = spark
 
 The program should now look something like the screenshot below.
 
-![](./Screenshots/Chapter 9/Selection_011.png)
+![](./Screenshots/Chapter_9/Selection_011.png)
 
 
 
@@ -180,7 +180,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 The output should be displayed as shown in the screenshot below, when you run the program.
 
-![](./Screenshots/Chapter 9/Selection_015.png)
+![](./Screenshots/Chapter_9/Selection_015.png)
 
 
 Please see that we need not register the UDF using the `udf.register` method when we have declared a function literal within the udf function. However, we must register our UDF when he have not used the function literal and defined the UDF using the def keyword. We shall look at this in the next few steps.
@@ -216,7 +216,7 @@ val ratingDecDf = spark.sql("select *, decrUDF2(rating) as ratingDec from rating
 
 The program should look something like the screenshot shown below.
 
-![](./Screenshots/Chapter 9/Selection_018.png)
+![](./Screenshots/Chapter_9/Selection_018.png)
  
 
 **Step 8:** Let us finally call the show method and check the output.
@@ -233,7 +233,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 
 The following output is shown.
-![](./Screenshots/Chapter 9/Selection_019.png)
+![](./Screenshots/Chapter_9/Selection_019.png)
 
 
  

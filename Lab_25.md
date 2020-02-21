@@ -153,7 +153,7 @@ employeeDS.select($"*", ranked.as("rank")).show()
 
 You should have the following output when you run this program.
 
-![](./Screenshots/Chapter 8/Selection_053.png)
+![](./Screenshots/Chapter_8/Selection_053.png)
 
 
 **Step 6:** Let us now find the third highest salary from each department.
@@ -189,7 +189,7 @@ employeeDS.select($"*", denseRanked.as("dense_rank")).show()
 
 The following output is shown when we run the program.
 
-![](./Screenshots/Chapter 8/Selection_054.png)
+![](./Screenshots/Chapter_8/Selection_054.png)
 
 
 As a challenge, please find out the second highest salary from each department using the dense_rank function.
@@ -209,7 +209,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 The following output is shown when we run the program.
 
-![](./Screenshots/Chapter 8/Selection_055.png)
+![](./Screenshots/Chapter_8/Selection_055.png)
 
 
 The percent_rank calculates the percent rank of a given row based on the following formula. 
@@ -227,7 +227,7 @@ employeeDS.select($"*", percentRank.as("percentRank")).show()
 
 The following output is shown when we run the program.
 
-![](./Screenshots/Chapter 8/Selection_056.png)
+![](./Screenshots/Chapter_8/Selection_056.png)
 
 
 **Step 8:** Let us finally look at lead and lag functions. The lead and lag functions are used to find how much the value of next row is leading or lagging when compared to the current row.
@@ -241,7 +241,7 @@ The lead function takes three arguments. The first is the column name, second is
 
 The following output is shown when we run the program.
 
-![](./Screenshots/Chapter 8/Selection_057.png)
+![](./Screenshots/Chapter_8/Selection_057.png)
 
 Similarly, there is lag function which calculates the lag.
 
@@ -252,7 +252,7 @@ employeeDS.select($"*", lags.as("lag")).show()
 
 The following output is shown when we run the program.
 
-![](./Screenshots/Chapter 8/Selection_058.png)
+![](./Screenshots/Chapter_8/Selection_058.png)
 
 
 #### Compile and Run

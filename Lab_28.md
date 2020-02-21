@@ -109,7 +109,7 @@ We have used the import org.apache.spark.sql.expressions. UserDefinedAggregateFu
 
 The program at this point should now look like the screenshot below.
 
-![](./Screenshots/Chapter 9/Selection_021.png)
+![](./Screenshots/Chapter_9/Selection_021.png)
 
 
 **Step 3:** The first method is to specify the inputSchema i.e., the data types of input parameters we will be passing for this UDAF.
@@ -155,7 +155,7 @@ def deterministic: Boolean = true
 
 The program at this point should look like the screenshot shown below.
 
-![](./Screenshots/Chapter 9/Selection_022.png)
+![](./Screenshots/Chapter_9/Selection_022.png)
 
 
 **Step 7:** Now that we have set our input, buffer and output schema, we have to initialize our buffer (0, 0) using the initialize method.
@@ -227,7 +227,7 @@ object avgRatingUDAF {
 
 The program should now look like the screenshot as shown below.
 
-![](./Screenshots/Chapter 9/Selection_025.png)
+![](./Screenshots/Chapter_9/Selection_025.png)
  
 ## Using Untyped UDAF...
 
@@ -268,7 +268,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 The following output is shown.
 
-![](./Screenshots/Chapter 9/Selection_029.png)
+![](./Screenshots/Chapter_9/Selection_029.png)
  
 We have successfully written a UDAF, registered and used it in the Spark application.
 

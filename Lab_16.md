@@ -151,7 +151,7 @@ As you can see from the screenshot above, the header is displayed correctly alon
 users.select("last_name").show()
 ```
 
-![](./Screenshots/Chapter 7/Selection_008.png)
+![](./Screenshots/Chapter_7/Selection_008.png)
 
 **Important:** You need to uncomment above line in `users.scala` using **vscode** editor before running program again.
 
@@ -159,7 +159,7 @@ users.select("last_name").show()
 
 The output is as shown in the screenshot below.
 
-![](./Screenshots/Chapter 7/Selection_009.png)
+![](./Screenshots/Chapter_7/Selection_009.png)
 
 ## Selecting multiple columns…
 
@@ -175,7 +175,7 @@ We simply call the select method on users dataFrame and pass the required column
 
 `sbt "runMain training.users"` 
 
-![](./Screenshots/Chapter 7/Selection_010.png)
+![](./Screenshots/Chapter_7/Selection_010.png)
 
 Task is complete!
 

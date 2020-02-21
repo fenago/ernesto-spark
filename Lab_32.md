@@ -102,7 +102,7 @@ Please see that we need not mention the format here as Parquet is default file f
 
 You should see the following output when you call the show method on the dataframe.
 
-![](./Screenshots/Chapter 10/Selection_015.png)
+![](./Screenshots/Chapter_10/Selection_015.png)
 
 
 **Step 3:** Let us write this back to the filesystem in Parquet format.
@@ -161,7 +161,7 @@ Enter into the paste mode and execute the following code.
 
 You should see the following output when you call the show method on the dataframe.
 
-![](./Screenshots/Chapter 10/Selection_017.png)
+![](./Screenshots/Chapter_10/Selection_017.png)
 
 
 

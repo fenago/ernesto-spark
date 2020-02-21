@@ -182,7 +182,7 @@ This completes our first ever Spark program. All we need to do now is to run it.
 
 Once you click above command, `sbt` will start executing the program by first compiling and then display the result in the bottom. The execution might take some time based upon the hardware configuration of your machine.
 
-![](./Screenshots/Chapter 4/Selection_018.png)
+![](./Screenshots/Chapter_4/Selection_018.png)
 
 To view the result, scroll up the console until you see text in white as shown in the screenshot. This is the output result showing each word in the text file with number of it occurences.
 
@@ -234,7 +234,7 @@ Please note that we have used print inside foreach and not println.
 
 `sbt "runMain training.wordCount"` 
 
-![](./Screenshots/Chapter 4/Selection_023.png)
+![](./Screenshots/Chapter_4/Selection_023.png)
 
 As you can see from the screenshot above, the `toDebugString` method displays the Lineage Graph. The indentations in the last four lines specify the shuffle boundary. Meaning, there was no shuffle of data for these opeartions: map, flatmap, teftFile. While the reduceByKey operation involves shuffling of data.
 

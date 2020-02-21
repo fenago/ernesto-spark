@@ -46,7 +46,7 @@ The Python packaging for Spark is not intended to replace all of the other use c
 
 The Spark shell should show you that the web interface is available `locally` at the following URL as shown below.
 
-![](./Screenshots/Chapter 4/Selection_024.png)
+![](./Screenshots/Chapter_4/Selection_024.png)
 
 
 Your driverHostname might be different. If a port is being used by another application, Spark will increase the port by 1 until an open port is found. For example, if 4040 is already taken, it will increase the port number to 4041.
@@ -61,7 +61,7 @@ The driverhostname is usually an IP address in the realtime environment and 4040
 
 **Step 2:** Once you navigate to the web interface URL. You should see the Spark web interface as shown in the screenshot below.
 
-![](./Screenshots/Chapter 4/Selection_025.png)
+![](./Screenshots/Chapter_4/Selection_025.png)
 
 Since there is no job running, you won't be able to see any metrics.
 
@@ -89,23 +89,23 @@ Now let us write a map function which takes the numRDD and gives a squaredRDD as
 After you see the output in the console, navigate back to the browser and refresh the Spark web interface. You should see a completed job as shown in the screenshot below.
 
 
-![](./Screenshots/Chapter 4/Selection_026.png)
+![](./Screenshots/Chapter_4/Selection_026.png)
 
 ## DAG Visualization
 
 **Step 4:** You can click on the collect link below the Description column and you will be taken to stages. Click on the collect link again to check more information as shown in the screenshot below.
 
-![](./Screenshots/Chapter 4/Selection_027.png)
+![](./Screenshots/Chapter_4/Selection_027.png)
 
 **Step 5:** Click on the DAG Visualization link to view the DAG.
 
-![](./Screenshots/Chapter 4/Selection_028.png)
+![](./Screenshots/Chapter_4/Selection_028.png)
 
 ## Executors
 
 Click on the `Executors` link in the navigation bar to monitor the executors.
 
-![](./Screenshots/Chapter 4/Selection_029.png)
+![](./Screenshots/Chapter_4/Selection_029.png)
 
 Task is complete. We have seen the Spark architecture in detail by discussing the Lineage Graph and DAG.
 

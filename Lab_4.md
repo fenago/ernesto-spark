@@ -77,7 +77,7 @@ Now that you are sure that you have the Spark tar file, untar the Spark tar file
 
 `tar -xvf spark-2.4.4-bin-hadoop2.7.tgz -C /usr/share` 
  
-![](./Screenshots/Chapter 3/Selection_005.png)
+![](./Screenshots/Chapter_3/Selection_005.png)
 
 The file will start to untar to /usr/share directory as shown in the screenshot above. You can verify the same by executing the following command below.
 
@@ -85,7 +85,7 @@ The file will start to untar to /usr/share directory as shown in the screenshot 
 
 `ls sp*`
 
-![](./Screenshots/Chapter 3/Selection_006.png)
+![](./Screenshots/Chapter_3/Selection_006.png)
 
 As we can see from the screenshot above, the Spark directory is listed.
 
@@ -94,7 +94,7 @@ Let us make a softlink to the spark directory so that we don't have to refer Spa
 
 `ln -s spark-2.4.4-bin-hadoop2.7/ spark`
 
-![](./Screenshots/Chapter 3/Selection_007.png)
+![](./Screenshots/Chapter_3/Selection_007.png)
 
 Run the following command again to check if we were able to create the softlink successfully.
 
@@ -125,7 +125,7 @@ Now reload the modified .bashrc file using the following command.
 
 Once you run, the above command, a screen similar to the screenshot shows confirming the successful installation of Spark.
  
-![](./Screenshots/Chapter 3/Selection_018.png)
+![](./Screenshots/Chapter_3/Selection_018.png)
 
 **Note:** It might not work first time, Type `Ctrl` + `C` to quit and run `spark-shell` command again in that case.
 

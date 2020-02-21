@@ -127,7 +127,7 @@ In the query above, we are simply using count function with a WHERE clause to ge
 
 The output should be as shown in the screenshot below.
 
-![](./Screenshots/Chapter 7/Selection_031.png)
+![](./Screenshots/Chapter_7/Selection_031.png)
 
 
 
@@ -146,7 +146,7 @@ In the query above, we have used GROUP BY to to group by state and then ORDER BY
 
 The result is as shown in the screenshot below.
 
-![](./Screenshots/Chapter 7/Selection_032.png)
+![](./Screenshots/Chapter_7/Selection_032.png)
 
 ## Save File
 
@@ -186,7 +186,7 @@ Now run the program as you did in the previous task and check the output directo
 
 Open the `part-00000-<guid>` file and you should see the result.
 
-![](./Screenshots/Chapter 7/Selection_034.png)
+![](./Screenshots/Chapter_7/Selection_034.png)
 
 This way you can perform any operations using the SQL data manipulation language. 
 

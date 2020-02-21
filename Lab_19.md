@@ -197,7 +197,7 @@ nyUserCount.show()
 
 The output is as shown in the screenshot below.
 
-![](./Screenshots/Chapter 7/Selection_044.png)
+![](./Screenshots/Chapter_7/Selection_044.png)
 
 
 **Step 4:** Let us now write some code to get the count for all the users for each state. We first need to import the implicits as shown below.
@@ -223,7 +223,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 The output is as shown in the screenshot below.
 
-![](./Screenshots/Chapter 7/Selection_047.png)
+![](./Screenshots/Chapter_7/Selection_047.png)
  
 Task is complete!
  

@@ -68,7 +68,7 @@ Now, let us use the parallelize keyword and create an RDD for the list we have c
 
 You have created your first RDD successfully. Please note that we are using the sc which is the object of Spark Context. The sc object is automatically created when we launch the Spark Shell as shown in the screenshot below. This is the reason we are able to access sc and use Spark Context.
 
-![](./Screenshots/Chapter 3/Selection_018.png)
+![](./Screenshots/Chapter_3/Selection_018.png)
 
 **Step 2:** Let us now create an RDD using a file from the file system. We shall be using the textFile API to create an RDD from the file system. First, download the file ratings.csv from the URL below and save it to the home/chapter_3 folder. (Please create a folder named chapter_3 in the home folder.)
 
@@ -82,7 +82,7 @@ Each line of this file represents one rating of one movie by one user, and has t
  
 `val count_ratings = ratings.count` 
 
-![](./Screenshots/Chapter 3/Selection_020.png)
+![](./Screenshots/Chapter_3/Selection_020.png)
  
 As you can see from the screenshot above, the count of the total records (ratings) present in the RDD has been returned as a new RDD called count_ratings.
 
@@ -106,13 +106,13 @@ Task is complete!
 
 `val lettersRDD = sc.parallelize(letters)` 
 
-![](./Screenshots/Chapter 3/Selection_021.png)
+![](./Screenshots/Chapter_3/Selection_021.png)
 
 **Step 2:** You can access the first element of the RDD using the first method as shown below.
 
 `lettersRDD.first` 
 
-![](./Screenshots/Chapter 3/Selection_022.png) 
+![](./Screenshots/Chapter_3/Selection_022.png) 
 
 As you can see from the screenshot above, the first element in the RDD has been returned.
 
@@ -126,7 +126,7 @@ But if you want to view all the elements in the RDD, you have to use collect met
 `lettersRDD.collect` 
 
 
-![](./Screenshots/Chapter 3/Selection_024.png)
+![](./Screenshots/Chapter_3/Selection_024.png)
 
 ## Filter Function 
 
@@ -152,7 +152,7 @@ Let's call the function with the parameter friends which is a List of type Strin
 
 `find(friends)` 
 
-![](./Screenshots/Chapter 3/Selection_026.png)
+![](./Screenshots/Chapter_3/Selection_026.png)
 
 
 ## Map Function
@@ -165,7 +165,7 @@ With the the pairs RDD gets created. Now let us use the foreach keyword to print
 
 `pairs.foreach(println)` 
 
-![](./Screenshots/Chapter 3/Selection_027.png) 
+![](./Screenshots/Chapter_3/Selection_027.png) 
 
 As you can see from the screenshot above, we have used the map function to create a tuple with first character of the name of each element and name itself in the friendsRDD. The first character is obtained by the function called charAt which takes the number to access the position of a character from a String.
 
@@ -199,7 +199,7 @@ Similarly, we can also use the reduce function to multiply all the numbers in nu
 
 `val mulRDD = numRDD.reduce((a, b) => (a * b))` 
 
-![](./Screenshots/Chapter 3/Selection_030.png)
+![](./Screenshots/Chapter_3/Selection_030.png)
 
 These are a few basic RDD operations. Task is complete!
 

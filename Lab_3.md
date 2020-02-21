@@ -91,7 +91,7 @@ case _ => println("Unknown job role")
 }
 ```
 
-![](./Screenshots/Chapter 2/Selection_038.png) 
+![](./Screenshots/Chapter_2/Selection_038.png) 
 
 In the code above, we have created a new variable called job which has a value of Transponster. We then use the match keyword to match the job variable with a list of cases. As you can see from the screenshot, the value of job is correctly matched and the output is printed. The last case statement which has an underscore (_) is a wild card operator. It is used so that, if none of the cases match, the default case is executed in the loop. Also, notice that there are no break clauses in Scala, similar to that of Java. Scala has in-built fall through mechanisms and so there are no break statements required.
 
@@ -111,7 +111,7 @@ println("Hello there!")
 Now, simply call this function by its name.
 `hello`
 
-![](./Screenshots/Chapter 2/Selection_039.png) 
+![](./Screenshots/Chapter_2/Selection_039.png) 
 
 As you can see from the screenshot above, Scala has automatically inferred the return type as unit which means no return type. Unit is similar to that of Void in Java.
 
@@ -130,7 +130,7 @@ Now, exit out of the paste mode and simply call this function by its name.
 
 `married("Ross", 3)`
 
-![](./Screenshots/Chapter 2/Selection_040.png) 
+![](./Screenshots/Chapter_2/Selection_040.png) 
 
 Please note that the return type (which is String, in this case) and also the keyword return are optional. Scala can determine the return type based on the last expression in the function body as shown below.
 
@@ -164,7 +164,7 @@ Here, we are defining a function named highSquared which takes two parameters an
 
 `println(result)` 
 
-![](./Screenshots/Chapter 2/Selection_043.png) 
+![](./Screenshots/Chapter_2/Selection_043.png) 
 
 ## Functions
 
@@ -175,7 +175,7 @@ Here, we are defining a function named highSquared which takes two parameters an
  
 In the example above, we have used a function literal instead of referring name of another function. It basically does the same thing which we have seen in the previous step but in a different way. This is often used in Spark and it is very important that you understand what is going on here.
 
-![](./Screenshots/Chapter 2/Selection_044.png) 
+![](./Screenshots/Chapter_2/Selection_044.png) 
 
 Task is complete!
 
@@ -193,7 +193,7 @@ Let us now print the list.
 
 `println(s"Some of the popular TV shows are: $shows")` 
 
-![](./Screenshots/Chapter 2/Selection_045.png) 
+![](./Screenshots/Chapter_2/Selection_045.png) 
 
 We can also access the individual items in the list using their index.
 
@@ -229,7 +229,7 @@ These are a few transformations we can apply over a list. There are so many more
 shows.<press tab key>
 ```
 
-![](./Screenshots/Chapter 2/Selection_050.png) 
+![](./Screenshots/Chapter_2/Selection_050.png) 
 
 If you are not sure what a function does, you can type its name after the dot operator and press tab twice. The console will show you what the function expects you to pass in. For example,
 
@@ -237,7 +237,7 @@ If you are not sure what a function does, you can type its name after the dot op
 shows.reduce<press tab key twice>
 ```
 
-![](./Screenshots/Chapter 2/Selection_051.png) 
+![](./Screenshots/Chapter_2/Selection_051.png) 
 
 **Step 2:** Let us now look at map collection. Let us first create a map of elements.
 
@@ -247,7 +247,7 @@ Now that we have a map collection, let us try to access the value by the key.
 
 `println(couples("Chandler"))` 
 
-![](./Screenshots/Chapter 2/Selection_052.png) 
+![](./Screenshots/Chapter_2/Selection_052.png) 
 
 As you can see from the screenshot above, we were able to access the value based on it's key.
 
@@ -255,7 +255,7 @@ But if we try to access a value for a non existing key, an exception is thrown a
 
 `println(couples("Joey"))` 
 
-![](./Screenshots/Chapter 2/Selection_053.png)  
+![](./Screenshots/Chapter_2/Selection_053.png)  
 
 To overcome this problem, we use the getOrElse method and specify a default value when the key does not exist.
 

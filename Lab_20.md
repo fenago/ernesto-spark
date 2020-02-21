@@ -171,7 +171,7 @@ movies.show()
  
 The following schema will be shown when we run the program.
 
-![](./Screenshots/Chapter 8/Selection_005.png)
+![](./Screenshots/Chapter_8/Selection_005.png)
 
 
 **Step 6:** Let us now perform some operations with our dataset. The following code below is used to find the total count of each rating.
@@ -227,7 +227,7 @@ count.collect.foreach(println)
 
 The output should be shown as below.
 
-![](./Screenshots/Chapter 8/Selection_008.png)
+![](./Screenshots/Chapter_8/Selection_008.png)
  
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.

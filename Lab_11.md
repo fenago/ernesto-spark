@@ -144,7 +144,7 @@ joined.collect.foreach(println)
 
 The output with the joined results can be seen as shown in the screenshot below.
 
-![](./Screenshots/Chapter 5/Selection_038.png)
+![](./Screenshots/Chapter_5/Selection_038.png)
 
 You can then similarly perform the rest of the joins such as left outer join and right outer join.
 

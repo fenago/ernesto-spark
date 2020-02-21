@@ -150,7 +150,7 @@ This function simply adds the sum and counts of all the buffers and returns back
 
 The program at this point should look like in the screenshot below.
 
-![](./Screenshots/Chapter 9/Selection_031.png)
+![](./Screenshots/Chapter_9/Selection_031.png)
 
 **Step 6:** Next, similar to the evaluate method in the previous task we have to implement the finish method. The finish method contains the logic to compute the average i.e., dividing the sum with count.
 
@@ -169,7 +169,7 @@ The error below the object name should have been gone by now as we have implemen
 
 The program should now look like the one shown in the screenshot.
 
-![](./Screenshots/Chapter 9/Selection_032.png) 
+![](./Screenshots/Chapter_9/Selection_032.png) 
 
 
 **Step 8:** Let us now use this typed UDAF. Create a new object within the program as shown in the screenshot and name it avgTypedUDAF. Define the main function and also create the Spark Session.
@@ -198,7 +198,7 @@ val ds = sparkSession.read
 ```
 
 The program should look like the screenshot below.
-![](./Screenshots/Chapter 9/Selection_033.png) 
+![](./Screenshots/Chapter_9/Selection_033.png) 
  
 
 **Step 9:** Let us now use of UDAF we wrote in this task. We have to call the toColumn method on our UDAF and give it a name using the name method as shown below.
@@ -225,7 +225,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 The output which calculates average of all the ratings is as shown in the screenshot below.
  
-![](./Screenshots/Chapter 9/Selection_034.png) 
+![](./Screenshots/Chapter_9/Selection_034.png) 
  
 
 This completes the Typed UADF task.

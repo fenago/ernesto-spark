@@ -108,7 +108,7 @@ books - http://bit.ly/2kupo5v
 
 This will return you a RDD[String, String] which is a paired RDD as shown below.
 
-![](./Screenshots/Chapter 10/Selection_004.png)
+![](./Screenshots/Chapter_10/Selection_004.png)
 
 This paired RDD contains the name of the files as keys and the entire content of files as values.
 
@@ -118,7 +118,7 @@ This paired RDD contains the name of the files as keys and the entire content of
 
 `textFiles.keys.collect.foreach(println)`{{execute T1}} 
 
-![](./Screenshots/Chapter 10/Selection_005.png)
+![](./Screenshots/Chapter_10/Selection_005.png)
 
 We can also get the values by using the values method. We can also perform all the operations which you can apply on paired RDDs such as mapValues, reduceByKey, sortByKey etc.
 
@@ -150,7 +150,7 @@ Let us now check if the read was successful by calling the show method on the ra
 
 `ratings.show()`{{execute T1}} 
 
-![](./Screenshots/Chapter 10/Selection_006.png)
+![](./Screenshots/Chapter_10/Selection_006.png)
 
 We can also use the textFile method as shown below.
 
@@ -180,7 +180,7 @@ Please make sure that you only have one string column while you save the text fi
 
 You should see the file saved as shown below.
 
-![](./Screenshots/Chapter 10/Selection_007.png)
+![](./Screenshots/Chapter_10/Selection_007.png)
 
 Task is complete!
 

@@ -132,7 +132,7 @@ aggAlias.show()
 
 The following result should be shown.
 
-![](./Screenshots/Chapter 8/Selection_020.png)
+![](./Screenshots/Chapter_8/Selection_020.png)
 
 As you can see from the screenshot above, the column names appear as we have specified.
 

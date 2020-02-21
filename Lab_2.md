@@ -142,7 +142,7 @@ Loops are an essential part of any programming language and it is no different w
 
 `if (numOfKids > 2) println ("They are Phoebe Buffay's kids.") else println ("Parent unknown!")`
 
-![](./Screenshots/Chapter 2/Selection_031.png)
+![](./Screenshots/Chapter_2/Selection_031.png)
 
 As you can see from the screenshot, the console only prints out the statement which is true based on the condition.
 
@@ -152,7 +152,7 @@ You can also write the if loop in the REPL in multiple lines using the paste mod
 
 This will take you to the paste mode with a prompt to enter your code as shown in the screenshot.
 
-![](./Screenshots/Chapter 2/Selection_032.png)
+![](./Screenshots/Chapter_2/Selection_032.png)
 
 You can now enter Scala code in multiple lines. Once you are done with your code press Ctrl + D to come out of the paste mode and execute the code.
 
@@ -168,7 +168,7 @@ println("Parent unknown!")
 
 The code is executed as soon as you have exited from the paste mode and result is displayed.
 
-![](./Screenshots/Chapter 2/Selection_033.png)
+![](./Screenshots/Chapter_2/Selection_033.png)
 
 If you do not want the last iteration to be included, you can use the keyword until instead of to. For example,
 
@@ -197,7 +197,7 @@ println(s"The king of sarcasm is $friend")
 }
 ```
 
-![](./Screenshots/Chapter 2/Selection_035.png)
+![](./Screenshots/Chapter_2/Selection_035.png)
 
 In the above example, we are looping through the list of collection called friends, with an if condition. We filter out all the items except for one element and substitute the variable in the print statement. Please see that we are using double equals operator to compare two strings.
 
@@ -227,7 +227,7 @@ friends += 1
 }
 ```
 
-![](./Screenshots/Chapter 2/Selection_036.png)
+![](./Screenshots/Chapter_2/Selection_036.png)
 
 In the code above, we have first declared an Integer variable with a value of 6 and then a list of names of type String. Next, we print out a header so that the output makes sense and then write the While loop. The loop starts with a keyword while and then the condition inside the parentheses. The condition we set here is to continue the loop until value of friends is less than 6. Next, we use String interpolation to substitute the variables within the print statement. Please see that we have used curly braces, as we have substituted a variable named friends as a value to the variable  names. So that every time the loop runs, we are accessing each element of the list by its index starting from 0. Finally we increment the variable friends with 1.
 
@@ -247,6 +247,6 @@ i += 1
 println(i)
 } while (i < 5)```
 
-![](./Screenshots/Chapter 2/Selection_037.png)
+![](./Screenshots/Chapter_2/Selection_037.png)
 
 The difference between while and do while loops is that any expression within the do clause runs at least once irrespective of the condition in while clause.

@@ -173,7 +173,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 The output is as shown in the screenshot below.
 
-![](./Screenshots/Chapter 8/Selection_013.png)
+![](./Screenshots/Chapter_8/Selection_013.png)
  
 The only difference between creating a DataFrame and a Dataset is the method which we call at the end. We use the toDF method to create a DataFrame and toDS method to create a dataset.
 

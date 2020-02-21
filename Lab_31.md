@@ -91,7 +91,7 @@ We have used a new option here which is called NullValue. This will replace all 
 
 We can then call the show method as shown in the screenshot below to check if it was successful.
  
- ![](./Screenshots/Chapter 10/Selection_008.png)
+ ![](./Screenshots/Chapter_10/Selection_008.png)
 
 
 
@@ -114,7 +114,7 @@ Enter into the paste mode and execute the following code.
 
 `dataNew.show()`{{execute T1}}
 
-![](./Screenshots/Chapter 10/Selection_009.png)
+![](./Screenshots/Chapter_10/Selection_009.png)
 
 
 **Step 4:** Let us now write this dataframe back to the filesystem in CSV format.
@@ -172,7 +172,7 @@ Enter into the paste mode and execute the following code.
 
 `jsonData.show()`{{execute T1}}
 
-![](./Screenshots/Chapter 10/Selection_011.png)
+![](./Screenshots/Chapter_10/Selection_011.png)
 
 **Step 4:** Let us now load the multi line JSON file. Download the file example_2.json from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
 

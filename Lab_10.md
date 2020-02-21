@@ -134,7 +134,7 @@ grouped.collect.foreach(println)
 
 The output is as shown in the screenshot below with all the tags for a movie are grouped together.
 
-![](./Screenshots/Chapter 5/Selection_031.png)
+![](./Screenshots/Chapter_5/Selection_031.png)
 
 **Step 5:** To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
@@ -151,7 +151,7 @@ val RDDKeys = flattened.keys
 RDDKeys.collect.foreach(println)
 ```
 
-![](./Screenshots/Chapter 5/Selection_033.png)
+![](./Screenshots/Chapter_5/Selection_033.png)
 
 Similarly, we can extract the values using the code below.
 
@@ -163,7 +163,7 @@ RDDValues.collect.foreach(println)
 
 **Important:** You need to uncomment above line in `tags.scala` using **vscode** editor before running program again.
 
-![](./Screenshots/Chapter 5/Selection_034.png)
+![](./Screenshots/Chapter_5/Selection_034.png)
 
 
 `sbt "runMain training.tags"` 

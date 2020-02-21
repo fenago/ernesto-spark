@@ -112,7 +112,7 @@ val userId = records(0).toInt
 val ratings = records(2).toFloat
 ```
 
-![](./Screenshots/Chapter 5/Selection_011.png)
+![](./Screenshots/Chapter_5/Selection_011.png)
 
 The records variable contains of 4 fields. We can simply access them based on the index starting from 0. So, we simply extract the userId which is the first field to the variable userId and ratings which is the third field to the variable ratings.
 
@@ -122,7 +122,7 @@ Finally, we simply have to return the userId and ratings to complete our functio
 (userId, ratings)
 ```
 
-![](./Screenshots/Chapter 5/Selection_012.png)
+![](./Screenshots/Chapter_5/Selection_012.png)
 
 This creates a tuple of userId and ratings. We can use this tuple to create our paired RDD in the next task.
 
@@ -176,7 +176,7 @@ To run this program from the terminal, simply run the following command. The pro
 
 You should have the output in the console with the key-value pairs as shown in the screenshot below.
 
-![](./Screenshots/Chapter 5/Selection_016.png)
+![](./Screenshots/Chapter_5/Selection_016.png)
 
 The first element in the tuple is the key (userId) and the second element in the tuple is a value (ratings).
 
@@ -190,7 +190,7 @@ Task is complete!
 RDDPair.collect.foreach(println)
 ```
 
-![](./Screenshots/Chapter 5/Selection_021.png)
+![](./Screenshots/Chapter_5/Selection_021.png)
 
 You can use comments in Scala using the characters '//' preceding the comment as shown below. These kind of comments are called single line comments.
 
@@ -235,7 +235,7 @@ avgRatings.collect.foreach(println)
 
 Once the job is finished, check the output in the console as shown in the screenshot below.
 
-![](./Screenshots/Chapter 5/Selection_023.png)
+![](./Screenshots/Chapter_5/Selection_023.png)
 
 You can also sort the result by the key by referring the first element in the sortBy function or simply using the sortByKey function key as shown below.
 

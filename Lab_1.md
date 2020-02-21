@@ -91,7 +91,7 @@ After the installation is completed successfully, type scala in your terminal an
 
 As you can see from the screenshot, the output is shown below immediately as soon as you hit enter.
 
-![](./Screenshots/Chapter 2/Selection_014.png)
+![](./Screenshots/Chapter_2/Selection_014.png)
 
 **Step 5:** To quit the Scala REPL, you use the following command.
 
@@ -114,7 +114,7 @@ Once you see the scala prompt, enter the following piece of code.
 
 The above line of code is used to declare an immutable variable named name of type String which has a value of Learning Voyage. The keyword val is used to declare a variable which is immutable. When val is used, the created variable can no longer be changed or modified. Scala encourages to use immutability whenever possible. This will help you track your code easily and the values do not get modified accidentally when referring them programmatically. Unlike other languages, the name of the variable is declared first and then the data type is declared separated by a colon (:) in Scala. 
 
-![](./Screenshots/Chapter 2/Selection_017.png)
+![](./Screenshots/Chapter_2/Selection_017.png)
 
 You can now use the variable name and use it inside the println function as shown below. This will print the value (String) associated with the variable (which is Learning Voyage in this case) to the console.
 
@@ -127,7 +127,7 @@ You can check if the declared variable is immutable by trying to append a new St
 
 `name = name + " Inc"` 
 
-![](./Screenshots/Chapter 2/Selection_018.png)
+![](./Screenshots/Chapter_2/Selection_018.png)
 
 As you can see from the screenshot above, it throws an error saying reassignment to val, which means you cannot reassign or modify an immutable variable.
 
@@ -141,7 +141,7 @@ As you can see from the screenshot above, it throws an error saying reassignment
 
 `println(newName)` 
 
-![](./Screenshots/Chapter 2/Selection_019.png)
+![](./Screenshots/Chapter_2/Selection_019.png)
 
 As you can see in the screenshot, we have concatenated a new string to the same variable and printed out the new string to the console using mutability. Mutability should be only used when it is absolutely required for your application.
 
@@ -153,7 +153,7 @@ As you can see in the screenshot, we have concatenated a new string to the same 
 
 `println(newName)` 
 
-![](./Screenshots/Chapter 2/Selection_020.png)
+![](./Screenshots/Chapter_2/Selection_020.png)
 
 As you can see from the screenshot above, we have applied the transformations on the immutable objects and achieve the same result as using the mutable objects.
 
