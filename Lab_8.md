@@ -10,7 +10,7 @@ All packages have been installed. There is no requirement for any setup.
 
 **Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
-All Notebooks are present in `work/Grokking-Deep-Learning` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+All Notebooks are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab8`
 
