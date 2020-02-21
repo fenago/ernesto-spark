@@ -20,7 +20,7 @@ You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab6`
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/wordCount.scala` to view scala file.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
+![](./Screenshots/scala.png)
 
 ## Prerequisites
 
@@ -213,7 +213,7 @@ count.toDebugString.foreach(print)
 ```
 
 **Important:** 
-- You need to add above line in `wordCount.scala` using **vscode** editor before running program again. 
+- You need to add above line in `wordCount.scala` using file editor before running program again. 
 - Also, comment line **22** which we added in the previous step as shown below.
 
 ![](./Screenshots/comment.JPG)

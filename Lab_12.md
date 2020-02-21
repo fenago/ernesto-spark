@@ -27,7 +27,7 @@ Now, move in the directory which contains the source code.
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/counters.scala` to view scala file.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
+![](./Screenshots/scala.png)
 
 We will cover following topics in this scenario.
 - Using Accumulator Method

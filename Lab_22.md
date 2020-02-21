@@ -20,7 +20,7 @@ You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab22`
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
+![](./Screenshots/scala.png)
 
 The aim of the following lab exercises is to start writing Spark SQL code in **vscode** editor to learn about Datasets and built-in functions.
 We will cover following topics in this scenario.
