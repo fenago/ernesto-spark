@@ -202,7 +202,7 @@ employeeDS.select($"*", rowNumber.as("rowNumber")).show()
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.window"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.window"` 
 
 The following output is shown when we run the program.
 
@@ -254,7 +254,7 @@ The following output is shown when we run the program.
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.window"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.window"` 
 
 Task is complete!
 

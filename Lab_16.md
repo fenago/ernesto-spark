@@ -134,7 +134,7 @@ The show method is an action and so this the point where the DAG is actually exe
 **Step 6:** Let us run this program and check the output. You should see the schema as shown below.
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.users"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.users"` 
  
 As you can see, the schema been correctly discovered by Spark for each and every column in the dataFrame. Please note that if a column has values of more than one data type, Spark will infer it as String.
 The output of dataFrame users is as shown below.
@@ -152,7 +152,7 @@ users.select("last_name").show()
 
 **Important:** You need to uncomment above line in `users.scala` using **vscode** editor before running program again.
 
-`sbt "runMain training.users"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.users"` 
 
 The output is as shown in the screenshot below.
 
@@ -170,7 +170,7 @@ users.select("first_name", "last_name").show()
 
 We simply call the select method on users dataFrame and pass the required columns as arguments. Then we call the show method as usual.
 
-`sbt "runMain training.users"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.users"` 
 
 ![](./Screenshots/Chapter_7/Selection_010.png)
 

@@ -183,7 +183,7 @@ sortedMoviesWithNames.collect.foreach(println)
 ![](./Screenshots/Chapter_6/Selection_043.png)
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.ratingsByMovies"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.ratingsByMovies"` 
 
 Task is complete!
 

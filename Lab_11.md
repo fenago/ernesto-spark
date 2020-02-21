@@ -200,7 +200,7 @@ println(mappedCol)
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.joins"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.joins"` 
 
 The result is shown as an ArrayBuffer for all the values of the key.
 

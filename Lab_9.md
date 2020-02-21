@@ -169,7 +169,7 @@ PS: Using collect is not recommended if your data is very big. When collect is u
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
-`sbt "runMain training.avgRatings"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.avgRatings"` 
 
 You should have the output in the console with the key-value pairs as shown in the screenshot below.
 
@@ -228,7 +228,7 @@ avgRatings.collect.foreach(println)
 
 **Step 5:** To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
-`sbt "runMain training.avgRatings"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.avgRatings"` 
 
 Once the job is finished, check the output in the console as shown in the screenshot below.
 
@@ -285,5 +285,5 @@ Task is complete!
 
 To run the program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
-`sbt "runMain training.avgRatings"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.avgRatings"` 
 

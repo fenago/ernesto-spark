@@ -141,7 +141,7 @@ joinedDf.show()
 
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.sqlJoins"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.sqlJoins"` 
 
 You should see the joined table as shown in the screenshot below.
 
@@ -214,7 +214,7 @@ userCountByState.show()
 ```
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.dfOps"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.dfOps"` 
 
 The output is as shown in the screenshot below.
 

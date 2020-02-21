@@ -239,7 +239,7 @@ To retrieve the value from our accumulator which is badRecords, we use the value
 **Step 4:** Finally, let us run our code and check the output. You should see the number of bad records as shown in the screenshot below.
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.counters"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.counters"` 
 
  
 With this we have successfully impemented Accumulators using Spark 1.x API.
@@ -260,7 +260,7 @@ We are declaring a new variable called goodRecords and simply extracting (map) t
 
  
 **Step 6:** Let us now run it and see the good records as shown in the screenshot below.
-`sbt "runMain training.counters"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.counters"` 
 
 ![](./Screenshots/Chapter_6/Selection_013.png)
 

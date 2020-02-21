@@ -155,7 +155,7 @@ byUser.show()
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.builtInFunctions"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.builtInFunctions"` 
 
 The following result should be shown.
 
@@ -272,7 +272,7 @@ sorted.show()
  
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.collections"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.collections"` 
 
 Task is complete!
 

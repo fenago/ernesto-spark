@@ -167,7 +167,7 @@ With this we have successfully implementd Accumulators for Spark 2.x.
 ![](./Screenshots/Chapter_6/Selection_022.png)
 
  To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.countersV2"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.countersV2"` 
 
 
 Task is complete!

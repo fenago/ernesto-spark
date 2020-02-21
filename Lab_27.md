@@ -173,7 +173,7 @@ ratingDecDf.show()
  
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.decrRatingUDF"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.decrRatingUDF"` 
 
 The output should be displayed as shown in the screenshot below, when you run the program.
 
@@ -226,7 +226,7 @@ ratingDecDf.show()
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.decrRatingUDF"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.decrRatingUDF"` 
 
 
 The following output is shown.

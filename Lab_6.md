@@ -175,7 +175,7 @@ This completes our first ever Spark program. All we need to do now is to run it.
 
 **Step 5:** To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
-`sbt "runMain training.wordCount"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.wordCount"` 
 
 Once you click above command, `sbt` will start executing the program by first compiling and then display the result in the bottom. The execution might take some time based upon the hardware configuration of your machine.
 
@@ -200,7 +200,7 @@ We shall be saving the output to the following path IdeaProjects/Spark/chapter_4
 
 **Step 2:** Now run the program as you did in the previous task and check the output directory. You should see two files: part-00000 and a _SUCCESS file. The output is saved in part-00000 file.
  
-`sbt "runMain training.wordCount"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.wordCount"` 
 
 Open the `part-00000` file and you should see the result as shown below.
 
@@ -229,7 +229,7 @@ Please note that we have used print inside foreach and not println.
 
 **Step 2:** Run the program as you did before and you should see the output as shown below.
 
-`sbt "runMain training.wordCount"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.wordCount"` 
 
 ![](./Screenshots/Chapter_4/Selection_023.png)
 

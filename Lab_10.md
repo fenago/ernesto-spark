@@ -135,7 +135,7 @@ The output is as shown in the screenshot below with all the tags for a movie are
 
 **Step 5:** To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
-`sbt "runMain training.tags"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.tags"` 
  
 
 You may optionally convert the values from compactBuffer to a list by simply mapping the output and converting them to a List as shown below.
@@ -163,7 +163,7 @@ RDDValues.collect.foreach(println)
 ![](./Screenshots/Chapter_5/Selection_034.png)
 
 
-`sbt "runMain training.tags"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.tags"` 
 
 Task is complete!
 

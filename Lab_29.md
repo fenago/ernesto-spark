@@ -218,7 +218,7 @@ avg.show()
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.avgTypedUADF"` 
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.avgTypedUADF"` 
 
 The output which calculates average of all the ratings is as shown in the screenshot below.
  

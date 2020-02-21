@@ -166,7 +166,7 @@ recordsDs.show()
 ## Compile & Run
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.rddToDs"`
+`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.rddToDs"`
 
 The output is as shown in the screenshot below.
 
