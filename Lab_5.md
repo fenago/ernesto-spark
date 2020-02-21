@@ -170,8 +170,10 @@ If you think this is a bit complicated to understand, let us look at an another 
 
 Create a List of few numbers and create an RDD from that list as shown below.
 
-```val num = List(1, 2, 3, 4)
-val numRDD = sc.parallelize(num)```
+```
+val  num = List(1, 2, 3, 4)
+val numRDD = sc.parallelize(num)
+```
 
 Now let us write a map function which takes the numRDD and gives a squaredRDD as shown below.
 

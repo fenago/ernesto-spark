@@ -81,7 +81,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val data = spark
+```
+val data = spark
 .read
 .format("csv")
 .option("InferSchema", "true")
@@ -105,7 +106,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val dataNew = spark
+```
+val  dataNew = spark
 .read
 .format("csv")
 .options(Map("InferSchema" -> "true"
@@ -165,7 +167,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val jsonData = spark.read
+```
+val  jsonData = spark.read
 .format("json")
 .option("multiLine", "false")
 .load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_1.json")
@@ -193,7 +196,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val multiJson = spark.read
+```
+val  multiJson = spark.read
     .format("json")
     .option("multiLine", "true")
     .load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_2.json")

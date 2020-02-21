@@ -50,11 +50,13 @@ Fire up the spark-shell from the terminal `spark-shell`
 
 **Step 1:** Let us first create a collection with data as shown below. Please make sure you have the imports from the previous section already imported. You will have to import them again if you have closed the Spark Session.
 
-```val dates = Seq(
+```
+val dates = Seq(
   (1, "Ernesto", "2015-09-24"),
   (2, "Lee", "1985-05-16"),
   (3, "John", "2012-07-16"),
-  (4, "Doe", "1914-08-02"))``` 
+  (4, "Doe", "1914-08-02"))
+``` 
 
 
 Next, let us convert the collection to dataset using the toDS method and rename the column as shown below using the withColumnRenamed method. The default column names for dataset are monotonically increasing numbers like _1, _2, _3 etc.
@@ -89,12 +91,14 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val extracted = casted
+```
+val  extracted = casted
   .withColumn("year", year($"date"))
   .withColumn("month", month($"date"))
   .withColumn("dayOfYear", dayofyear($"date"))
   .withColumn("quarter", quarter($"date"))
-  .withColumn("weekOfYear", weekofyear($"date"))``` 
+  .withColumn("weekOfYear", weekofyear($"date"))
+``` 
 
 #### Output
 We have used the year, month and dayofyear functions to extract the extract the individual attributes from the date column. We have also used the quarter function to get which quarter the date is from and weekofyear function to get the week of which the date belongs to.
@@ -110,14 +114,16 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val arithmetic = casted
+```
+val  arithmetic = casted
   .withColumn("ageInDays", datediff(current_date(), $"date"))
   .withColumn("addedDays", date_add($"date", 25))
   .withColumn("subtrDays", date_sub($"date", 16))
   .withColumn("addedMonths", add_months($"date", 4))
   .withColumn("lastDay", last_day($"date"))
   .withColumn("nextDay", next_day($"date", "tuesday"))
-  .withColumn("monthsBetween", months_between(current_date(), $"date", true))``` 
+  .withColumn("monthsBetween", months_between(current_date(), $"date", true))
+``` 
 
 
 `arithmetic.show()` 
@@ -142,7 +148,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val timeStamp = spark.createDataset(Seq(
+```
+val  timeStamp = spark.createDataset(Seq(
   (1, "Ernesto", "2015-09-24 00:01:12"),
   (2, "Lee", "1985-05-16 03:04:15"),
   (3, "John", "2012-07-16 06:07:18"),
@@ -156,7 +163,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val timeStampDS = timeStamp
+```
+val  timeStampDS = timeStamp
   .withColumnRenamed("_1", "id")
   .withColumnRenamed("_2", "name")
   .withColumnRenamed("_3", "timeStamp")
@@ -187,7 +195,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val extractedTs = timeStampDS
+```
+val  extractedTs = timeStampDS
   .withColumn("second", second($"timeStamp"))
   .withColumn("minute", minute($"timeStamp"))
   .withColumn("hour", hour($"timeStamp"))
@@ -205,7 +214,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val conversions = timeStampDS
+```
+val  conversions = timeStampDS
     .withColumn("unixTime", unix_timestamp($"timeStamp"))
     .withColumn("fromUnix", from_unixtime($"unixTime"))
 ``` 

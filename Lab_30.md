@@ -91,7 +91,7 @@ This will read the data and create an RDD[String] as shown below. We can read da
 
 Let us now check if the save was successful. For that open a new terminal and check the contents using the command below.
 
-`ls ~/ernesto-spark/Files/chapter_10/output`
+`ls ~/work/ernesto-spark/Files/chapter_10/output`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
  
@@ -150,7 +150,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val ratings = spark
+```
+val ratings = spark
 .read
 .text("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.txt")
 ``` 

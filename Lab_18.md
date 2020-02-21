@@ -175,7 +175,7 @@ Now run the program as you did in the previous task and check the output directo
 
 #### Output Files
 
-`ls ~/ernesto-spark/Files/chapter_7/output` 
+`ls ~/work/ernesto-spark/Files/chapter_7/output` 
 
 `cat ~/ernesto-spark/Files/chapter_7/output/part-*` 
 

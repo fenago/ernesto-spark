@@ -166,7 +166,8 @@ You can now enter Scala code in multiple lines. Once you are done with your code
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val numOfKids = 3
+```
+val  numOfKids = 3
 if (numOfKids > 2) {
 println("They are Phoebe Buffay's kids.")
 } else {
@@ -199,7 +200,8 @@ We can also use an if statement within the for loop as shown below.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val friends = List("Chandler", "Monica", "Rachel", "Ross", "Joey", "Phoebe")
+```
+val  friends = List("Chandler", "Monica", "Rachel", "Ross", "Joey", "Phoebe")
 for(friend <- friends if friend == "Chandler"){
 println(s"The king of sarcasm is $friend")
 }

@@ -97,7 +97,7 @@ This will create and RDD[(String, Int)] as shown below.
 You may run a cat command from another terminal to check if the save was successful, but the file will not be human readable.
 
 
-`ls ~/ernesto-spark/Files/chapter_10/seqOut`
+`ls ~/work/ernesto-spark/Files/chapter_10/seqOut`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
@@ -116,7 +116,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val seqData = sc.sequenceFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/seqOut/part-00001"
+```
+val  seqData = sc.sequenceFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/seqOut/part-00001"
 ,classOf[org.apache.hadoop.io.Text]
 ,classOf[org.apache.hadoop.io.IntWritable])
 ```
@@ -132,7 +133,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val newRDD = seqData.map
+```
+val  newRDD = seqData.map
 {
 	case (x, y) => (x.toString, y.get())
 }
@@ -209,7 +211,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val hadoopRDD = hadoopData.map
+```
+val  hadoopRDD = hadoopData.map
 {
 	case (x, y) => (x.toString, y.toString)
 }

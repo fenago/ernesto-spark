@@ -52,8 +52,7 @@ Fire up the spark-shell from the terminal `spark-shell`
 
 **Step 2:** Next, let us convert the collection to dataset using the toDS method and rename the column as numbers using the withColumnRenamed method. The default column name when you create a dataset is value. Hence we change the default column name to numbers.
 
-```val numbersDS = numbers.toDS().withColumnRenamed("value", "numbers").cache()
-``` 
+`val numbersDS = numbers.toDS().withColumnRenamed("value", "numbers").cache()` 
 
 The dataset should now be created with the renamed column.
 
@@ -145,7 +144,8 @@ There are a plethora of String functions available in Spark. Let us look at few 
 
 **Step 1:** As usual, let us first create the List and create a dataset from it. Please make sure to specify imports again if you have closed the Spark session.
 
-```val quote = List("I have no special talent.",
+```
+val  quote = List("I have no special talent.",
   "I am only passionately curious.",
   "I have a dream.",
   "I came, I saw, I conquered.")

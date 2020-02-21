@@ -85,7 +85,8 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val job = "Transponster"
+```
+val  job = "Transponster"
 job match {
 case "Masseuse" => println("That's Phoebe")
 case "Chef" => println("That's Monica")

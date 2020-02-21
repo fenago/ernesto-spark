@@ -204,7 +204,7 @@ We shall be saving the output to the following path IdeaProjects/Spark/chapter_4
 
 Open the `part-00000` file and you should see the result as shown below.
 
-`ls ~/ernesto-spark/chapter_4/word_count/output` 
+`ls ~/work/ernesto-spark/chapter_4/word_count/output` 
 
 `cat ~/ernesto-spark/chapter_4/word_count/output/part-00000` 
 
