@@ -110,7 +110,8 @@ Let us first create a function that does not have any parameters or a return typ
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```def hello = {
+```
+def hello = {
 println("Hello there!")
 }
 ```
@@ -128,7 +129,8 @@ As you can see from the screenshot above, Scala has automatically inferred the r
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```def married(name: String, times: Int): String = {
+```
+def married(name: String, times: Int): String = {
 return name + " has married " + times + " times"
 }
 ```
@@ -148,7 +150,8 @@ Please note that the return type (which is String, in this case) and also the ke
 
 In the scala console, enter the following code.
 
-```def squared (num: Int) : Int = {
+```
+def squared (num: Int) : Int = {
 num * num
 }
 ``` 
@@ -160,7 +163,8 @@ You can call the function square to see if it works. For example,
 
 Now, let us pass this function as a parameter to another function.
 
-```def highSquared(num: Int, func: Int => Int): Int = {
+```
+def highSquared(num: Int, func: Int => Int): Int = {
 	func(num)
 	}
 ``` 

@@ -186,7 +186,8 @@ If you do not want the last iteration to be included, you can use the keyword un
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```for ( i <- 1 until 5) {
+```
+for ( i <- 1 until 5) {
 	val sum = i + i
 	println(sum)
 }
@@ -223,17 +224,12 @@ Enter into the paste mode and execute the following code.
 
 ```
 var friends = 0
-
 val names = List("Chandler", "Monica", "Rachel", "Phoebe", "Ross", "Joey")
-
 println("The names of friends are:")
 
 while (friends < 6){
-
 println(s"${names(friends)}")
-
 friends += 1
-
 }
 ```
 
@@ -251,11 +247,13 @@ Now, enter into the paste mode again and execute the following code to perform a
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```var i = 0
+```
+var i = 0
 do{
 i += 1
 println(i)
-} while (i < 5)```
+} while (i < 5)
+```
 
 ![](./Screenshots/Chapter_2/Selection_037.png)
 

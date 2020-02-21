@@ -88,7 +88,8 @@ Let's have a look and currying functions. We shall be working in the Scala shell
 
 **Step 2:** Let us now define a simple currying function with two parameter groups as shown below to understand the concept of curried functions.
 
-```def sum(x: Int) (y: Int): Int = {
+```
+def sum(x: Int) (y: Int): Int = {
 | x + y
 | }
 ```
@@ -99,7 +100,8 @@ We have defined a function called sum which adds two numbers. Instead of passing
 
 **Step 3:** We can also define currying functions with multiple parameters inside each parameter group as shown below.
 
-```def sumProd(a: Int, x: Int) (b: Int, y: Int): Int = {
+```
+def sumProd(a: Int, x: Int) (b: Int, y: Int): Int = {
 	| a * b + x * y
 	| }
 ```

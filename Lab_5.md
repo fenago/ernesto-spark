@@ -140,7 +140,8 @@ But if you want to view all the elements in the RDD, you have to use collect met
 
 The filter function we used above is a higher order function which takes another function as parameter and returns an RDD of type String. The name => name.contains("chandler") is similar to a function in Scala as shown below.
 
-```def find(name: List[String]): Boolean = {
+```
+def find(name: List[String]): Boolean = {
 	name.contains("Chandler")
 	}
 ``` 
@@ -186,7 +187,8 @@ Now let us write a map function which takes the numRDD and gives a squaredRDD as
 
 is same as
 
-```def square(x: Int): Int = {
+```
+def square(x: Int): Int = {
 	x * x
 }
 numRDD.map(square)
