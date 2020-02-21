@@ -39,18 +39,9 @@ The following are the advantages of using datasets.
 
 - Datasets can be converted from RDD and DataFrames. 
 
-## Clone Repository
-
-Let's first setup VScode editor and clone repository. Clone the following repository by executing following command in the terminal.
-`git clone https://github.com/athertahir/apache-spark.git`
-
-Now, move in the directory which contains the source code.
-
-`cd apache-spark/`
-
 
 **Note:**
-- The supplied commands in the next steps MUST be run from your `apache-spark` directory. 
+- The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/createDS.scala` to view scala file.
 
