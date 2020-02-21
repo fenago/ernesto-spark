@@ -52,7 +52,8 @@ Fire up the spark-shell from the terminal `spark-shell`
 
 **Step 2:** Next, let us convert the collection to dataset using the toDS method and rename the column as numbers using the withColumnRenamed method. The default column name when you create a dataset is value. Hence we change the default column name to numbers.
 
-```val numbersDS = numbers.toDS().withColumnRenamed("value", "numbers").cache()``` 
+```val numbersDS = numbers.toDS().withColumnRenamed("value", "numbers").cache()
+``` 
 
 The dataset should now be created with the renamed column.
 
@@ -147,7 +148,8 @@ There are a plethora of String functions available in Spark. Let us look at few 
 ```val quote = List("I have no special talent.",
   "I am only passionately curious.",
   "I have a dream.",
-  "I came, I saw, I conquered.")``` 
+  "I came, I saw, I conquered.")
+``` 
 
 `val quoteDS = quote.toDS().cache()` 
 
@@ -204,7 +206,8 @@ Let us use the show method to display the dataset as shown below.
 Let us use the show method to display the datasets as shown below.
 
 ```upCase.show()
-lowCase.show()```
+lowCase.show()
+```
 
 ![](./Screenshots/Chapter_8/Selection_049.png)
 
@@ -217,7 +220,8 @@ lowCase.show()```
 Let us use the show method to display the datasets as shown below.
 
 ```sub.show()
-trimmed.show()```
+trimmed.show()
+```
 
 The substring function takes three arguments. The first is the column name from which the sub string to be extracted from. Second and third are the start and positions from which we want to extract the string from.
 

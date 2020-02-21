@@ -36,7 +36,7 @@ We need following packages to perform the lab exercise:
 
 
 #### JAVA
-Verify the installation with: `java -version`{{execute T1}} 
+Verify the installation with: `java -version` 
 
 You'll see the following output:
 
@@ -51,7 +51,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 **Note:** Spark is already installed. It is not required to run following command to install
 
-PySpark is available in pypi. To install just run `pip install pyspark`{{execute T1}} 
+PySpark is available in pypi. To install just run `pip install pyspark` 
 
 ## Task: Text Files
 
@@ -70,17 +70,17 @@ treasure_island.txt - http://bit.ly/2LBFLtt
 ## RDD API
 
 
-**Step 2:** Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}.
+**Step 2:** Open the terminal and fire up the Spark shell `spark-shell`.
 
 Let us load the text file using the code below.
 
-`val textData = sc.textFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/treasure_island.txt")`{{execute T1}} 
+`val textData = sc.textFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/treasure_island.txt")` 
 
 This will read the data and create an RDD[String] as shown below. We can read data from any filesystem such as HDFS, AWS, Azure etc, this way just by providing the complete path or fully qualified URL of that purticular filesystem. We can then perform all the RDD operations or convert to a DataFrame or Dataset as required.
 
 **Step 2:** Let us now write this back to the file system as shown below.
 
-`textData.saveAsTextFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/output")`{{execute T1}} 
+`textData.saveAsTextFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/output")` 
 
 
 #### Verify
@@ -91,9 +91,15 @@ This will read the data and create an RDD[String] as shown below. We can read da
 
 Let us now check if the save was successful. For that open a new terminal and check the contents using the command below.
 
-`ls ~/apache-spark/Files/chapter_10/output`{{execute T2}} 
+`ls ~/apache-spark/Files/chapter_10/output`
 
-`cat ~/apache-spark/Files/chapter_10/output/part-00000`{{execute T2}} 
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+ 
+
+`cat ~/apache-spark/Files/chapter_10/output/part-00000`
+
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+ 
 
 
  
@@ -106,7 +112,7 @@ books - http://bit.ly/2kupo5v
 
 **Step 4:** Let us read these files using the wholeTextFiles method. This will read all the files present in books folder. Please switch back to Spark-shell and read the files using the code below.
 
-`val textFiles = sc.wholeTextFiles("/home/jovyan/work/ernesto-spark/Files/chapter_10/books")`{{execute T1}} 
+`val textFiles = sc.wholeTextFiles("/home/jovyan/work/ernesto-spark/Files/chapter_10/books")` 
 
 This will return you a RDD[String, String] which is a paired RDD as shown below.
 
@@ -118,7 +124,7 @@ This paired RDD contains the name of the files as keys and the entire content of
 
 **Step 5:** Let us simply print the file names by using the keys method on textFiles RDD as shown below.
 
-`textFiles.keys.collect.foreach(println)`{{execute T1}} 
+`textFiles.keys.collect.foreach(println)` 
 
 ![](./Screenshots/Chapter_10/Selection_005.png)
 
@@ -140,17 +146,18 @@ ratings.txt - http://bit.ly/2lJcCQF
 **Step 2:** Let us now load this file to Spark using the Spark Shell with the following code.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```val ratings = spark
 .read
-.text("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.txt")```{{execute T1}} 
+.text("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.txt")
+``` 
 
 Let us now check if the read was successful by calling the show method on the ratings dataframe.
 
-`ratings.show()`{{execute T1}} 
+`ratings.show()` 
 
 ![](./Screenshots/Chapter_10/Selection_006.png)
 
@@ -167,18 +174,18 @@ Using textFile ignores the partition directory names.
 
 **Step 3:** Let us write this back to the filesystem as shown below.
 
-`ratings.write.text("/home/jovyan/work/ernesto-spark/Files/chapter_10/output1")`{{execute T1}} 
+`ratings.write.text("/home/jovyan/work/ernesto-spark/Files/chapter_10/output1")` 
 
 Please make sure that you only have one string column while you save the text file successfully. Also, make sure the output directory (in this case, output1) doesn't exist before you perform the write action.
 
 **Step 4:** Use the following command to check if the save was successful. You will have to use the new terminal to run this command, as this won't be executed in Spark shell.
 
 
-**Important:** 
-- Commands below will run in **terminal 2** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
-- Interface will keep switching back to terminal 1 after executing command, you can manually switch by clicking `terminal 2`.
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output1/part*`{{execute T2}}
+`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output1/part*`
+
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 
 You should see the file saved as shown below.
 

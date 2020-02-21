@@ -37,7 +37,7 @@ We need following packages to perform the lab exercise:
 
 
 #### JAVA
-Verify the installation with: `java -version`{{execute T1}} 
+Verify the installation with: `java -version` 
 
 You'll see the following output:
 
@@ -52,7 +52,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 **Note:** Spark is already installed. It is not required to run following command to install
 
-PySpark is available in pypi. To install just run `pip install pyspark`{{execute T1}} 
+PySpark is available in pypi. To install just run `pip install pyspark` 
 
 ## Parquet Files
 
@@ -87,20 +87,21 @@ userdata1.parquet - http://bit.ly/2kfIhJ4
 
 **Step 2:** Let us no read this Parquet file to Spark using the code below.
 
-Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}.
+Open the terminal and fire up the Spark shell `spark-shell`.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
  ```val parquetData = spark
 .read
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/userdata1.parquet")```{{execute T1}}
+.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/userdata1.parquet")
+```
 
 Please see that we need not mention the format here as Parquet is default file format in Spark. However, you may explicitly mention the format as we did in the previous tasks if you desire so.
 
-`parquetData.show()`{{execute T1}} 
+`parquetData.show()` 
 
 You should see the following output when you call the show method on the dataframe.
 
@@ -109,20 +110,20 @@ You should see the following output when you call the show method on the datafra
 
 **Step 3:** Let us write this back to the filesystem in Parquet format.
 
-`parquetData.write.save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output4")`{{execute T1}}
+`parquetData.write.save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output4")`
  
 #### Output
 We can check if the save was successful by simply running the cat command from a new terminal as shown below. However, you will not be able to read the file correctly as it is not human readable.
 
-**Important:** 
-- Commands below will run in **terminal 2** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
-- Interface will keep switching back to terminal 1 after executing command, you can manually switch by clicking `terminal 2`.
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output4/part*`{{execute T2}}
+`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output4/part*`
+
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 
 **Step 4:** We can also save a parquet file using compression as shown below.
 
-`parquetData.write.option("codec", "gzip").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output5")`{{execute T1}}
+`parquetData.write.option("codec", "gzip").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output5")`
 
 Task is complete!
 
@@ -149,17 +150,18 @@ userdata1.orc - http://bit.ly/2kfQi0J
 **Step 2:** Reading an ORC file is similar to what we have been doing so far through out this exercise.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```val orcData = spark
 .read
 .format("orc")
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/userdata1_orc")```{{execute T1}}
+.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/userdata1_orc")
+```
 
 
- `orcData.show()`{{execute T1}} 
+ `orcData.show()` 
 
 You should see the following output when you call the show method on the dataframe.
 
@@ -169,18 +171,16 @@ You should see the following output when you call the show method on the datafra
 
 **Step 3:** We can now simply write to an ORC format similar to what we have been doing with other file formats so far.
 
-`orcData.write.format("orc").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output6")`{{execute T1}}
+`orcData.write.format("orc").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output6")`
 
 
 #### Output
 Similar to Parquet, ORC is also not human readable and you will only see gibberish data when used the cat command as shown below.
 
-**Important:** 
-- Commands below will run in **terminal 2** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
-- Interface will keep switching back to terminal 1 after executing command, you can manually switch by clicking `terminal 2`.
+`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output6/part*`
 
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output6/part*`{{execute T2}}
 
 Task is complete!
 

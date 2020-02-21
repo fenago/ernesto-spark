@@ -76,7 +76,8 @@ As you can see, the date is of type String.
 Let us print the schema to check if we were able to successfully convert the date column from String type to Date type. Let us also use the show function to view the dataset.
 
 ```casted.printSchema()
-casted.show()``` 
+casted.show()
+``` 
 
 As you can see, we have successfully casted the date column as date type.
 
@@ -146,7 +147,8 @@ Enter into the paste mode and execute the following code.
   (2, "Lee", "1985-05-16 03:04:15"),
   (3, "John", "2012-07-16 06:07:18"),
   (4, "Doe", "1914-08-02 09:10:20")
-))``` 
+))
+``` 
 
 
 Enter into the paste mode and execute the following code.
@@ -157,7 +159,8 @@ Enter into the paste mode and execute the following code.
 ```val timeStampDS = timeStamp
   .withColumnRenamed("_1", "id")
   .withColumnRenamed("_2", "name")
-  .withColumnRenamed("_3", "timeStamp")``` 
+  .withColumnRenamed("_3", "timeStamp")
+``` 
 
 Let us print the schema so that we can compare it with the timestamp type in the next step.
 
@@ -171,7 +174,8 @@ Let us print the schema so that we can compare it with the timestamp type in the
 Let us now print the schema and the dataset to check the casting.
 
 ```castedTimeStamp.printSchema()
-castedTimeStamp.show()``` 
+castedTimeStamp.show()
+``` 
 
 As you can see, we have successfully casted the timestamp column from String type to timestamp type. 
 
@@ -186,7 +190,8 @@ Enter into the paste mode and execute the following code.
 ```val extractedTs = timeStampDS
   .withColumn("second", second($"timeStamp"))
   .withColumn("minute", minute($"timeStamp"))
-  .withColumn("hour", hour($"timeStamp"))``` 
+  .withColumn("hour", hour($"timeStamp"))
+``` 
 
 The output is shown when we use the show method.
 
@@ -202,7 +207,8 @@ Enter into the paste mode and execute the following code.
 
 ```val conversions = timeStampDS
     .withColumn("unixTime", unix_timestamp($"timeStamp"))
-    .withColumn("fromUnix", from_unixtime($"unixTime"))``` 
+    .withColumn("fromUnix", from_unixtime($"unixTime"))
+``` 
 
 - The unix_timestamp function is used to convert the timestamp to unix timestamp.
 
@@ -213,7 +219,6 @@ The output is shown when we use the show method.
 `conversions.show()` 
 
 
- 
 
 Task is complete!
 

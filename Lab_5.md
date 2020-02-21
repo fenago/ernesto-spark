@@ -187,7 +187,8 @@ is same as
 ```def square(x: Int): Int = {
 	x * x
 }
-numRDD.map(square)``` 
+numRDD.map(square)
+``` 
 
 **Step 5:** For the numRDD we created in the previous step, let us use the reduce function to add all the numbers.
 `val sumRDD = numRDD.reduce((a, b) => (a + b))` 

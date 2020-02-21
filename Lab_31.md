@@ -37,7 +37,7 @@ We need following packages to perform the lab exercise:
 
 
 #### JAVA
-Verify the installation with: `java -version`{{execute T1}} 
+Verify the installation with: `java -version` 
 
 You'll see the following output:
 
@@ -52,7 +52,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 **Note:** Spark is already installed. It is not required to run following command to install
 
-PySpark is available in pypi. To install just run `pip install pyspark`{{execute T1}} 
+PySpark is available in pypi. To install just run `pip install pyspark` 
 
 ## CSV Files
 
@@ -74,10 +74,10 @@ Each line of this file represents one rating of one movie by one user, and has t
 
 **Step 2:** Let us now read this file to Spark from Spark shell using few options.
 
-Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}.
+Open the terminal and fire up the Spark shell `spark-shell`.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
@@ -87,20 +87,21 @@ Enter into the paste mode and execute the following code.
 .option("InferSchema", "true")
 .option("header", "false")
 .option("nullValue", "Null")
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.csv")```{{execute T1}}
+.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.csv")
+```
 
 We have used a new option here which is called NullValue. This will replace all the null values with the provided string, which is Null in this case. The default is "". Please check the references section for all the options that can be used while reading or writing CSV files. All the options can be used in this way or inside a map object.
 
 We can then call the show method as shown in the screenshot below to check if it was successful.
  
- ![](./Screenshots/Chapter_10/Selection_008.png)
+![](./Screenshots/Chapter_10/Selection_008.png)
 
 
 
 **Step 3:** We can also use the modes we have learned in our theory. Let us see an example.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
@@ -111,10 +112,11 @@ Enter into the paste mode and execute the following code.
 , "header" -> "false"
 , "nullValue" -> "Null"
 , "mode" -> "FAILFAST"))
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.csv")```{{execute T1}}
+.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.csv")
+```
 
 
-`dataNew.show()`{{execute T1}}
+`dataNew.show()`
 
 ![](./Screenshots/Chapter_10/Selection_009.png)
 
@@ -122,21 +124,21 @@ Enter into the paste mode and execute the following code.
 **Step 4:** Let us now write this dataframe back to the filesystem in CSV format.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-`dataNew.write.format("csv").option("sep", "|").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output2")`{{execute T1}}
+`dataNew.write.format("csv").option("sep", "|").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output2")`
 
 Here, we have used an option called sep which replaces the delimiter from comma to a pipe.
 
 **Step 5:** Let us check if the save was successful as we desired.
 
-**Important:** 
-- Commands below will run in **terminal 2** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
-- Interface will keep switching back to terminal 1 after executing command, you can manually switch by clicking `terminal 2`.
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output2/part*`{{execute T2}}
+`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output2/part*`
+
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 
 
 Task is complete!
@@ -159,20 +161,21 @@ example_1.json - http://bit.ly/2lRFI06
 **Step 2:** The following code is used to read the single line JSON file.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```val jsonData = spark.read
 .format("json")
 .option("multiLine", "false")
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_1.json")```{{execute T1}}
+.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_1.json")
+```
 
 
 
 **Step 3:** Let us check if we were able to load the JSON file successfully.
 
-`jsonData.show()`{{execute T1}}
+`jsonData.show()`
 
 ![](./Screenshots/Chapter_10/Selection_011.png)
 
@@ -186,28 +189,29 @@ example_2.json - http://bit.ly/2lL3IST
 **Step 5:** The following code is used to read the single line JSON file.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute T1}}
+`:paste`
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```val multiJson = spark.read
     .format("json")
     .option("multiLine", "true")
-    .load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_2.json")```{{execute T1}}
+    .load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_2.json")
+```
 
 
 **Step 6:** Let us now write this dataframe to the filsesystem.
 
-`multiJson.write.format("json").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output3")`{{execute T1}}
+`multiJson.write.format("json").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output3")`
  
 #### Output
 You can check the output by running the following command from a new terminal.
 
-**Important:** 
-- Commands below will run in **terminal 2** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
-- Interface will keep switching back to terminal 1 after executing command, you can manually switch by clicking `terminal 2`.
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output3/part*`{{execute T2}}
+`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output3/part*`
+
+Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
 
  
 Task is complete!
