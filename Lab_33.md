@@ -192,10 +192,11 @@ This file is the output of a Word Count MapReduce job. It contains words as keys
 
 **Step 2:** Before we read the file, we first need the following imports. We need to import the datatypes for both keys and values and also the input format. The keys are of type Text, values are Text and the input format is KeyValueTextInputFormat.
 
-```import org.apache.hadoop.io.Text
-import org.apache.hadoop.mapred.KeyValueTextInputFormat```
+```
+import org.apache.hadoop.io.Text
+import org.apache.hadoop.mapred.KeyValueTextInputFormat
+```
  
-
 **Step 3:** Let us now read the file using the hadoopFile API as shown below. This is the old Hadoop API.
 
 `val hadoopData = sc.hadoopFile[Text, Text, KeyValueTextInputFormat]("/home/jovyan/work/ernesto-spark/Files/chapter_10/part-r-00000")` 

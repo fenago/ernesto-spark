@@ -67,13 +67,13 @@ The partially applied functions as the name suggests are applied partially by on
 
 For example, we can partially apply the function which we created above using currying.
 
-```val part = sum(54)_```
+`val part = sum(54)_`
 
 This will return us a function object called part.
 
 We can now pass the parameter which we held back as shown below.
 
-```part(6)```
+`part(6)`
 
 ## Task 1: Defining Currying Functions
 

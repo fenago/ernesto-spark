@@ -205,7 +205,8 @@ Let us use the show method to display the dataset as shown below.
 
 Let us use the show method to display the datasets as shown below.
 
-```upCase.show()
+```
+upCase.show()
 lowCase.show()
 ```
 
@@ -219,7 +220,8 @@ lowCase.show()
 
 Let us use the show method to display the datasets as shown below.
 
-```sub.show()
+```
+sub.show()
 trimmed.show()
 ```
 

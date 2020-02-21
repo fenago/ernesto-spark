@@ -77,7 +77,8 @@ As you can see, the date is of type String.
 
 Let us print the schema to check if we were able to successfully convert the date column from String type to Date type. Let us also use the show function to view the dataset.
 
-```casted.printSchema()
+```
+casted.printSchema()
 casted.show()
 ``` 
 
@@ -181,7 +182,8 @@ Let us print the schema so that we can compare it with the timestamp type in the
 
 Let us now print the schema and the dataset to check the casting.
 
-```castedTimeStamp.printSchema()
+```
+castedTimeStamp.printSchema()
 castedTimeStamp.show()
 ``` 
 

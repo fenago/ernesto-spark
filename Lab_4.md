@@ -68,20 +68,17 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 Download URL : http://spark.apache.org/downloads.html
 
-`wget https://www-us.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz`
+`wget https://www-us.apache.org/dist/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz`
 
 After running the above command, your download should start. The download may take a while depending upon your internet connection.
 
 **Step 3:** The download will be saved in the current directory by default. You may optionally check if Spark has been downloaded using the ls command.
 
-`ls`
-
-
- 
+`ls` 
 
 Now that you are sure that you have the Spark tar file, untar the Spark tar file to /usr/share directory using the command below.
 
-`tar -xvf spark-2.4.4-bin-hadoop2.7.tgz -C /usr/share` 
+`sudo tar -xvf spark-2.4.5-bin-hadoop2.7.tgz -C /usr/share` 
  
 ![](./Screenshots/Chapter_3/Selection_005.png)
 
@@ -98,7 +95,7 @@ As we can see from the screenshot above, the Spark directory is listed.
 
 Let us make a softlink to the spark directory so that we don't have to refer Spark with entire name as above. This will also be useful for the future updates. Execute the following command.
 
-`ln -s spark-2.4.4-bin-hadoop2.7/ spark`
+`sudo ln -s spark-2.4.5-bin-hadoop2.7/ spark`
 
 ![](./Screenshots/Chapter_3/Selection_007.png)
 
@@ -114,7 +111,7 @@ Run following commands to append the environment variable at the end of the file
 
 `echo "SPARK_HOME=/usr/share/spark" >> ~/.bashrc`
 
-`echo "PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc" >> ~/.bashrc`
+`echo "PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc`
 
 
 Now reload the modified .bashrc file using the following command.
