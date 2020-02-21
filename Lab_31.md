@@ -6,15 +6,15 @@
 - Google Chrome (Recommended)
 
 #### Lab Environment
-Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+All packages have been installed. There is no requirement for any setup.
 
-**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
 All Notebooks are present in `work/Grokking-Deep-Learning` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab31`
 
-- Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/Files/chapter_10` to view files.
+- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/Files/chapter_10` to view files.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 

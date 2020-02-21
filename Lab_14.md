@@ -6,9 +6,9 @@
 - Google Chrome (Recommended)
 
 #### Lab Environment
-Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+All packages have been installed. There is no requirement for any setup.
 
-**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
 All Notebooks are present in `work/Grokking-Deep-Learning` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -18,7 +18,7 @@ You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab14`
 **Note:**
 - The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/CountByMovie.scala` to view scala file.
+- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/CountByMovie.scala` to view scala file.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
@@ -70,7 +70,7 @@ Ratings_head.csv - http://bit.ly/2X3r2wb
 
 ## Custom Accumulators...
 
-**Step 2:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/CountByMovie.scala` to view scala file.
+**Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/CountByMovie.scala` to view scala file.
 
 ```
 import org.apache.spark.util.AccumulatorV2
@@ -155,7 +155,7 @@ These are the abstract methods which must be implemented in our code as they are
 
 The error for the class name should be gone now. With this we have successfully implemented our Accumulator V2. We now have to use this custom accumulator in our main program.
 
-**Step 8:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/countByMovieMain.scala` to view scala file.
+**Step 8:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/countByMovieMain.scala` to view scala file.
 
 ```
 import org.apache.spark.sql.SparkSession

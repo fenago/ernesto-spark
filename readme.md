@@ -11,7 +11,7 @@ Apache Spark is an open-source distributed general-purpose cluster-computing fra
 
 ### Labs
 
-Labs for this course are available at path shared below. Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. 
+Labs for this course are available at path shared below. Elev8ed Labs (powered by Jupyter) will be accessible at the port given to you by your instructor. 
 
 1. ##### Apache Spark Scala Basics
 		* <host-ip>:<port>/lab/workspaces/lab1

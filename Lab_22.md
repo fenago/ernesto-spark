@@ -6,9 +6,9 @@
 - Google Chrome (Recommended)
 
 #### Lab Environment
-Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+All packages have been installed. There is no requirement for any setup.
 
-**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
 All Notebooks are present in `work/Grokking-Deep-Learning` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -18,7 +18,7 @@ You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab22`
 **Note:**
 - The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
+- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
@@ -64,7 +64,7 @@ You will get following output. If you get an error first time, please run the co
 Before we look at the user-defined functions, let us look at few of the built-in functions which are available in Spark in the next two tasks. 
 Aggregate Functions
 
-**Step 1:**  Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
+**Step 1:**  Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
  
 
 
@@ -157,7 +157,7 @@ The following result should be shown.
 
 So far, We have been working with IDE and learned how to create objects and run the programs. However, for this task where we learn about collection functions, let us work with the Spark shell so that we can quickly check the output on the fly, instead of running the program everytime we use a function. You may choose to work with IDE and it is perfectly fine. You will then have to create the SparkSession object and specify the required imports.
 
-**Step 1:**  Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/collections.scala` to view scala file.
+**Step 1:**  Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/collections.scala` to view scala file.
 
 **Step 2:** We need to import the implicits and functions to be able to work with the functions.
 
