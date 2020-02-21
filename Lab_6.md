@@ -54,13 +54,13 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 **Step 1:** Run the following commands from the terminal to install sbt.
 
-`echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list` 
+`echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list` 
 
-`curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add` 
+`curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add` 
 
-`apt-get update` 
+`sudo apt-get update` 
 
-`apt-get install sbt && sbt sbtVersion > /dev/null 2>&1` 
+`sudo apt-get install sbt && sbt sbtVersion > /dev/null 2>&1` 
 
 **Step 2:** Verify your sbt installation version by running the following command.	
 

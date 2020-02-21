@@ -48,6 +48,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 
 #### Install pyspark
+
+**Note:** Spark is already installed. It is not required to run following command to install
+
 PySpark is available in pypi. To install just run `pip install pyspark`{{execute T1}} 
 
 The Python packaging for Spark is not intended to replace all of the other use cases. This Python packaged version of Spark is suitable for interacting with an existing cluster (be it Spark standalone, YARN, or Mesos) - but does not contain the tools required to set up your own standalone Spark cluster.

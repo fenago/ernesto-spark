@@ -36,13 +36,16 @@ We need following packages to perform the lab exercise:
 
 ## Download and Install JDK
 
+**Note:** Java is already installed. It is not required to run following commands to install.
+
+
 **Step 1:** From the terminal, run the following commands to install JDK (Java Development Kit).
 
-`apt-get update` 
+`sudo apt-get update` 
 
 **Step 2:** Once you run the above command, run the following command to actually download and install JDK.
 
-`apt-get --assume-yes install default-jdk` 
+`sudo apt-get --assume-yes install default-jdk` 
 
 
 Verify the installation with: `java -version` 
