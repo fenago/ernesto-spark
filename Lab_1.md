@@ -10,7 +10,13 @@ All packages have been installed. There is no requirement for any setup.
 
 **Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
-All Notebooks are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
+Now, move in the directory which contains the scala source code by running following command in the terminal.
+
+`cd ~/work/ernesto-spark`
 
 You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab1`
 
@@ -37,7 +43,6 @@ We need following packages to perform the lab exercise:
 ## Download and Install JDK
 
 **Note:** Java is already installed. It is not required to run following commands to install.
-
 
 **Step 1:** From the terminal, run the following commands to install JDK (Java Development Kit).
 
@@ -66,7 +71,7 @@ Now that we have installed Java, we are ready to install Scala and start writing
 
 `wget www.scala-lang.org/files/archive/scala-2.12.8.deb`
 
-`dpkg -i scala-2.12.8.deb`
+`sudo dpkg -i scala-2.12.8.deb`
 
 
 **Step 2:** Verify your Scala installation version by running the following command.
@@ -85,7 +90,7 @@ After the installation is completed successfully, type scala in your terminal an
 
 `scala`
 
- The scala prompt is the interactive shell where you can write and run Scala code. This interactive shell is also known as `REPL`.
+The scala prompt is the interactive shell where you can write and run Scala code. This interactive shell is also known as `REPL`.
 
 **Step 4:** You can now start writing Scala code! Let's start by printing the classic "Hello world!" from the shell. To do this simply type the following code and hit enter on your keyboard.
 
@@ -189,7 +194,6 @@ Since there is no value set for our variable, we can use getOrElse method to set
 This is a very basic example of using Option collection. You can use them in variety of cases like pattern matching, case class etc.
 
 
-
 **Either Monadic Collection**
 
 The Either collection contains two objects called Left and Right object. The way how it works is, we can implement a condition in Either and return Left object in case of errors if the condition in Either is not satisfied and return Right object in case of the condition in Either is satisfied. Left for errors and Right for no errors is just a convention. You can use vice-versa as well.
@@ -197,3 +201,6 @@ The Either collection contains two objects called Left and Right object. The way
 **Try Monadic Collection**
 
 The Try Monadic Collection is similar to that of Either which contains two objects namely Success and Failure objects. As the name suggests, the Success object returns the value if the condition in Try succeeds else the Failure object is returned with the exception.
+
+#### Next
+In the next lab, we will look into advanced scala concepts.

@@ -10,7 +10,13 @@ All packages have been installed. There is no requirement for any setup.
 
 **Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
 
-All Notebooks are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
+
+Now, move in the directory which contains the scala source code by running following command in the terminal.
+
+`cd ~/work/ernesto-spark`
 
 You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab7`
 
@@ -33,13 +39,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 ```
 
 
-#### Install pyspark
 
-**Note:** Spark is already installed. It is not required to run following command to install
 
-PySpark is available in pypi. To install just run `pip install pyspark` 
-
-The Python packaging for Spark is not intended to replace all of the other use cases. This Python packaged version of Spark is suitable for interacting with an existing cluster (be it Spark standalone, YARN, or Mesos) - but does not contain the tools required to set up your own standalone Spark cluster.
 
 ## Task: Spark Web Interface
 
@@ -56,9 +57,9 @@ Your driverHostname might be different. If a port is being used by another appli
 
 ## Spark Web Interface
 
-We can access the Spark web interface to monitor the execution of Spark applications through a web browser. The wen interface can by accessed by navigating to the following URL. You can also access spark web console by clicking on `Spark UI` located next to terminal.
+We can access the Spark web interface to monitor the execution of Spark applications through a web browser. The web interface can by accessed by navigating to the following URL. First, update host-ip with ip address of the host machine where **jupyterLab** container is running:
 
-https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
+Spark UI: `http://<host-ip>:4040`
 
 The driverhostname is usually an IP address in the realtime environment and 4040 is the Spark's port by default. 
 
