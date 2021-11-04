@@ -6,51 +6,7 @@
 - Google Chrome (Recommended)
 
 #### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab2`
-
-## Install Scala
-
-We need following packages to perform the lab exercise: 
-- Java Development Kit
-- Scala
-
-
-#### JAVA
-Verify the installation with: `java -version` 
-
-You'll see the following output:
-
-```
-java version "1.8.0_201"
-Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
-Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
-```
-
-
-#### Install Scala
-
-**Note:** Scala is already installed. It is not required to run following commands to install.
-
-**Step 1:** Run the following commands from the terminal to install Scala.
-
-`wget www.scala-lang.org/files/archive/scala-2.12.8.deb`
-
-`dpkg -i scala-2.12.8.deb`
-
-
-**Step 2:** Verify your Scala installation version by running the following command.
+Verify your Scala installation version by running the following command.
  
 `scala -version`
 

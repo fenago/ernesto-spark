@@ -5,28 +5,6 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab1`
-
-
-## What is Scala?
-
-Scala is short for Scalable Language. It is called scalable language because it is scalable as per the user requirement. Scala is a Functional as well as Object Oriented Open Source Programming language which runs on top of a `Java Virtual Machine (JVM)`. Scala is, as said above, the most preferred programming language for Spark, as `Spark` itself is built with Scala. Since Scala runs on top of a JVM, we can access Java libraries within the Scala code and utilize the functionalities of Java without being limited by Scala itself.
-
-The compiler used to compile the Scala code is scalac. The Scala compiler compiles the Scala code to a byte code which is understood by a `JVM` to process the code. This is similar to how Java compiles its Java code using javac compiler to a byte code to process it on a JVM.  
-
 ## Introduction
 
 The aim of the following lab exercises is to install Scala, and perform various exercises by writing Scala code so that we can get our hands on Scala.

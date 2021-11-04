@@ -5,31 +5,6 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab4`
-
-## What is Spark?
-
-Apache Spark is an open source, fast and unified parallel large-scale data processing engine. It provides a framework for programming with distributed processing of large datasets at high speed. Spark supports most popular programming languages such as Java, Python, Scala and R. 
-
-Spark is scalable, meaning, it can run on a single desktop machine or a laptop to a cluster of thousands of machines. Spark provides a set of inbuilt libraries which can be accessed to perform data analysis over a large dataset. However, if your requirement doesn’t get satisfied with the inbuilt libraries, you can write one or explore countless external libraries from open source communities on the internet.
-
-## Why Spark?
-
-Why use Spark when we have Hadoop? Well, Spark excels as a unified platform for processing huge data at very high speeds for various data processing requirements (will be discussed later in this chapter). Also, Spark is an in-memory processing framework. Spark is considered as a successor of Apache Hadoop. Let us briefly discuss the advantages of Spark over Hadoop.
-
 
 #### Data Processing with Spark
 
@@ -37,19 +12,10 @@ In Spark, the data is read from the disk, processed in-memory but instead of spi
 
 ![](./Screenshots/spark.JPG)
 
-## Install Java
 
+## Install Spark...
 
-**Step 1:** From the terminal, run the following commands to install JDK (Java Development Kit).
-
-`sudo apt-get update` 
-
-**Step 2:** Once you run the above command, run the following command to actually download and install JDK.
-
-`sudo apt-get --assume-yes install default-jdk` 
-
-
-**Step 3:** Verify the installation with: `java -version` 
+**Step 1:** Verify the installation with: `java -version` 
 
 You'll see the following output:
 
@@ -58,11 +24,6 @@ java version "1.8.0_201"
 Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
 Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 ```
-
-**Note:** Java Development Kit (JDK) is a prerequisite to install Spark.
-
-## Install Spark...
-
 
 **Step 2:** Let us install Spark in Standalone mode. Navigate to the download URL below, select the latest stable version for Spark (which is Spark 2.4.2 at the time of writing this book) and select the package type which is Pre-built for Apache Hadoop 2.7 and later. After selecting click the link as shown in the screenshot below to download Spark.
 

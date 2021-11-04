@@ -5,26 +5,12 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab6`
 
 
 **Note:**
-- The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
-- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/wordCount.scala` to view scala file.
+- The supplied commands in the next steps MUST be run from your `~/Desktop/ernesto-spark` directory. 
+- Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
+- Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/wordCount.scala` to view scala file.
 
 ![](./Screenshots/scala.png)
 
@@ -46,20 +32,9 @@ Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
 Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 ```
 
+#### SBT
 
-#### Install SBT
-
-**Step 1:** Run the following commands from the terminal to install sbt.
-
-`echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list` 
-
-`curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add` 
-
-`sudo apt-get update` 
-
-`sudo apt-get install sbt && sbt sbtVersion > /dev/null 2>&1` 
-
-**Step 2:** Verify your sbt installation version by running the following command.	
+Verify your sbt installation version by running the following command.	
 
 `sbt sbtVersion`	
 
@@ -175,7 +150,10 @@ This completes our first ever Spark program. All we need to do now is to run it.
 
 **Step 5:** To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.wordCount"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.wordCount"` 
 
 Once you click above command, `sbt` will start executing the program by first compiling and then display the result in the bottom. The execution might take some time based upon the hardware configuration of your machine.
 
@@ -200,7 +178,10 @@ We shall be saving the output to the following path IdeaProjects/Spark/chapter_4
 
 **Step 2:** Now run the program as you did in the previous task and check the output directory. You should see two files: part-00000 and a _SUCCESS file. The output is saved in part-00000 file.
  
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.wordCount"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.wordCount"` 
 
 Open the `part-00000` file and you should see the result as shown below.
 
@@ -229,7 +210,10 @@ Please note that we have used print inside foreach and not println.
 
 **Step 2:** Run the program as you did before and you should see the output as shown below.
 
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.wordCount"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.wordCount"` 
 
 ![](./Screenshots/Chapter_4/Selection_023.png)
 

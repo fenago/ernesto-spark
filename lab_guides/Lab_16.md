@@ -5,26 +5,12 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab16`
 
 
 **Note:**
-- The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
-- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/users.scala` to view scala file.
+- The supplied commands in the next steps MUST be run from your `~/Desktop/ernesto-spark` directory. 
+- Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
+- Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/users.scala` to view scala file.
 
 ![](./Screenshots/scala.png)
 
@@ -75,7 +61,7 @@ us-500.csv - http://bit.ly/2LmgDW2
 
 **Note:** We already have cloned a github repository which contains a required file. Open `~/work/ernesto-spark/Files/chapter_7` to view file.
 
-**Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/users.scala` to view scala file.
+**Step 2:** Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/users.scala` to view scala file.
 
 
 ```
@@ -134,7 +120,10 @@ The show method is an action and so this the point where the DAG is actually exe
 **Step 6:** Let us run this program and check the output. You should see the schema as shown below.
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.users"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.users"` 
  
 As you can see, the schema been correctly discovered by Spark for each and every column in the dataFrame. Please note that if a column has values of more than one data type, Spark will infer it as String.
 The output of dataFrame users is as shown below.
@@ -152,7 +141,10 @@ users.select("last_name").show()
 
 **Important:** You need to uncomment above line in `users.scala` using **vscode** editor before running program again.
 
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.users"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.users"` 
 
 The output is as shown in the screenshot below.
 
@@ -170,7 +162,10 @@ users.select("first_name", "last_name").show()
 
 We simply call the select method on users dataFrame and pass the required columns as arguments. Then we call the show method as usual.
 
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.users"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.users"` 
 
 ![](./Screenshots/Chapter_7/Selection_010.png)
 

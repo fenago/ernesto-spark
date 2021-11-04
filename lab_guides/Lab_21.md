@@ -5,26 +5,12 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab21`
 
 
 **Note:**
-- The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
-- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/rddToDs.scala` to view scala file.
+- The supplied commands in the next steps MUST be run from your `~/Desktop/ernesto-spark` directory. 
+- Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
+- Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/rddToDs.scala` to view scala file.
 
 ![](./Screenshots/scala.png)
 
@@ -82,7 +68,7 @@ mlb_players.csv - http://bit.ly/2JhzVJj
 
 ## Creating Dataset from an RDD...
 
-**Step 2:** Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/rddToDs.scala` to view scala file.
+**Step 2:** Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/rddToDs.scala` to view scala file.
 
 ```
 import org.apache.spark.sql.SparkSession
@@ -166,7 +152,10 @@ recordsDs.show()
 ## Compile & Run
 
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.rddToDs"`
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.rddToDs"`
 
 The output is as shown in the screenshot below.
 

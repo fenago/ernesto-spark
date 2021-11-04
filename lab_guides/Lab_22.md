@@ -5,26 +5,12 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab22`
 
 
 **Note:**
-- The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
-- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
+- The supplied commands in the next steps MUST be run from your `~/Desktop/ernesto-spark` directory. 
+- Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
+- Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
 
 ![](./Screenshots/scala.png)
 
@@ -70,7 +56,7 @@ You will get following output. If you get an error first time, please run the co
 Before we look at the user-defined functions, let us look at few of the built-in functions which are available in Spark in the next two tasks. 
 Aggregate Functions
 
-**Step 1:**  Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
+**Step 1:**  Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/builtInFunctions.scala` to view scala file.
  
 
 
@@ -155,7 +141,10 @@ byUser.show()
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.builtInFunctions"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.builtInFunctions"` 
 
 The following result should be shown.
 
@@ -163,7 +152,7 @@ The following result should be shown.
 
 So far, We have been working with IDE and learned how to create objects and run the programs. However, for this task where we learn about collection functions, let us work with the Spark shell so that we can quickly check the output on the fly, instead of running the program everytime we use a function. You may choose to work with IDE and it is perfectly fine. You will then have to create the SparkSession object and specify the required imports.
 
-**Step 1:**  Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/collections.scala` to view scala file.
+**Step 1:**  Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/collections.scala` to view scala file.
 
 **Step 2:** We need to import the implicits and functions to be able to work with the functions.
 
@@ -272,7 +261,10 @@ sorted.show()
  
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.collections"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.collections"` 
 
 Task is complete!
 

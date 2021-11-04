@@ -5,25 +5,11 @@
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
-#### Lab Environment
-All packages have been installed. There is no requirement for any setup.
-
-**Note:** Labs will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
-
-Lab instructions and scala examples are present in `~/work/ernesto-spark` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
-
-There should be terminal(s) opened already. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
-
-Now, move in the directory which contains the scala source code by running following command in the terminal.
-
-`cd ~/work/ernesto-spark`
-
-You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab18`
 
 **Note:**
-- The supplied commands in the next steps MUST be run from your `~/work/ernesto-spark` directory. 
-- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **File Browser** tab on the top left and open `~/work/ernesto-spark/src/main/scala/training/sqlQueries.scala` to view scala file.
+- The supplied commands in the next steps MUST be run from your `~/Desktop/ernesto-spark` directory. 
+- Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
+- Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/sqlQueries.scala` to view scala file.
 
 ![](./Screenshots/scala.png)
 
@@ -116,7 +102,10 @@ totalUsersNJ.show()
 
 **Important:** You need to uncomment above line in `sqlQueries.scala` using **vscode** editor before running program again.
 
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.sqlQueries"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.sqlQueries"` 
 
 In the query above, we are simply using count function with a WHERE clause to get the count of users who belong to NJ. We use the AS clause to name the column as shown in the screenshot below. Then, we use the show method to display the results.
 
@@ -135,7 +124,10 @@ userCountByState.show()
 
 **Important:** You need to uncomment above line in `sqlQueries.scala` using **vscode** editor before running program again.
 
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.sqlQueries"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.sqlQueries"` 
 
 In the query above, we have used GROUP BY to to group by state and then ORDER BY to sort the count in descending order.
 
@@ -171,7 +163,10 @@ Similar to reading the file using read and load methods, we use write and save m
 
 Now run the program as you did in the previous task and check the output directory. You should see two files: part-00000 and a _SUCCESS file. The output is saved in part-00000 file.
  
-`rm -rf ~/work/ernesto-spark/src/main/scala/training/.ipynb_checkpoints/ && sbt "runMain training.sqlQueries"` 
+
+Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+`sbt "runMain training.sqlQueries"` 
 
 #### Output Files
 
