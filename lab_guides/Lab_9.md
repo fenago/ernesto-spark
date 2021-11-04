@@ -12,7 +12,7 @@
 - Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
 - Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/avgRatings.scala` to view scala file.
 
-![](./Screenshots/scala.png)
+![](./Screenshots/avg.png)
 
 
 The aim of the following lab exercises is to start writing Spark code in **vscode** editor to learn about Paired RDDs.

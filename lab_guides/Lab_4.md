@@ -97,8 +97,3 @@ Run `:q` to exit `spark-shell`.
 
 Task is complete!
 
-#### Install pyspark
-
-**Note:** Spark is already installed. It is not required to run following command to install
-
-PySpark is available in pypi. To install just run `pip install pyspark` 

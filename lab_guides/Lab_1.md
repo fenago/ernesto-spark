@@ -18,18 +18,7 @@ We need following packages to perform the lab exercise:
 - Java Development Kit
 - Scala
 
-## Download and Install JDK
-
-**Note:** Java is already installed. It is not required to run following commands to install.
-
-**Step 1:** From the terminal, run the following commands to install JDK (Java Development Kit).
-
-`sudo apt-get update` 
-
-**Step 2:** Once you run the above command, run the following command to actually download and install JDK.
-
-`sudo apt-get --assume-yes install default-jdk` 
-
+## Java Version
 
 Verify the installation with: `java -version` 
 
@@ -47,9 +36,9 @@ Now that we have installed Java, we are ready to install Scala and start writing
 
 **Step 1:** Run the following commands from the terminal to install Scala.
 
-`wget www.scala-lang.org/files/archive/scala-2.12.8.deb`
+`wget www.scala-lang.org/files/archive/scala-2.12.8.rpm`
 
-`sudo dpkg -i scala-2.12.8.deb`
+`sudo rpm -i scala-2.12.8.rpm`
 
 
 **Step 2:** Verify your Scala installation version by running the following command.

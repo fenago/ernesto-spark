@@ -12,7 +12,7 @@
 - Final code was already cloned from github for this lab. You can just understand the application code in the next steps and run it using the instructions.
 - Start IntelliJ IDE and open `~/work/ernesto-spark/src/main/scala/training/wordCount.scala` to view scala file.
 
-![](./Screenshots/scala.png)
+![](./Screenshots/wordcount.png)
 
 ## Prerequisites
 
@@ -210,8 +210,10 @@ Please note that we have used print inside foreach and not println.
 
 **Step 2:** Run the program as you did before and you should see the output as shown below.
 
-
 Run solution using intelliJ IDEA. You can also run using sbt CLI:
+
+![](./Screenshots/run.png)
+
 
 `sbt "runMain training.wordCount"` 
 
