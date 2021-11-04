@@ -62,9 +62,9 @@ Verify your sbt installation version by running the following command.
 You will get following output. If you get an error first time, please run the command again.
 
 ```	
-[info] Loading project definition from /home/jovyan/work/ernesto-spark/project	
+[info] Loading project definition from /headless/Desktop/ernesto-spark/project	
 [info] Loading settings for project apache-spark from build.sbt ...	
-[info] Set current project to Spark (in build file:/home/jovyan/work/ernesto-spark/)	
+[info] Set current project to Spark (in build file:/headless/Desktop/ernesto-spark/)	
 [info] 1.3.2
 ```
 

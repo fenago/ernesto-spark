@@ -92,7 +92,7 @@ This will create and RDD[(String, Int)] as shown below.
 
 **Step 2:** Let is now write the RDD to Sequence file format using the saveAsSequenceFile method as shown below.
 
-`seqRDD.saveAsSequenceFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/seqOut")`
+`seqRDD.saveAsSequenceFile("/headless/Desktop/ernesto-spark/Files/chapter_10/seqOut")`
 
 You may run a cat command from another terminal to check if the save was successful, but the file will not be human readable.
 
@@ -117,7 +117,7 @@ Enter into the paste mode and execute the following code.
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```
-val  seqData = sc.sequenceFile("/home/jovyan/work/ernesto-spark/Files/chapter_10/seqOut/part-00001"
+val  seqData = sc.sequenceFile("/headless/Desktop/ernesto-spark/Files/chapter_10/seqOut/part-00001"
 ,classOf[org.apache.hadoop.io.Text]
 ,classOf[org.apache.hadoop.io.IntWritable])
 ```
@@ -182,7 +182,7 @@ sparkContext.newAPIHadoopFile("/path/to/file", classOf[inputFormatClass], classO
 Hadoop files are the output of Hadoop MapReduce jobs. We can read Hadoop files with Spark and do further processing using Spark. We shall now look at both the old Hadoop API to read the output from MapReduce jobs to Spark. 
 
 
-**Step 1:** Download the file part-r-00000 from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
+**Step 1:** Download the file part-r-00000 from the URL below and save it to the /headless/Desktop/ernesto-spark/Files/chapter_10 folder.
 
 part-r-00000 - http://bit.ly/2lSqdFy
 
@@ -199,7 +199,7 @@ import org.apache.hadoop.mapred.KeyValueTextInputFormat
  
 **Step 3:** Let us now read the file using the hadoopFile API as shown below. This is the old Hadoop API.
 
-`val hadoopData = sc.hadoopFile[Text, Text, KeyValueTextInputFormat]("/home/jovyan/work/ernesto-spark/Files/chapter_10/part-r-00000")` 
+`val hadoopData = sc.hadoopFile[Text, Text, KeyValueTextInputFormat]("/headless/Desktop/ernesto-spark/Files/chapter_10/part-r-00000")` 
 
 ![](./Screenshots/Chapter_10/Selection_025.png)
 

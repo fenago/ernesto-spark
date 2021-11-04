@@ -78,7 +78,7 @@ spark.read
 
 Parquet is Spark's default file format. Let us read and write Parquet files in Spark.
 
-**Step 1:** Download the file userdata1.parquet from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
+**Step 1:** Download the file userdata1.parquet from the URL below and save it to the /headless/Desktop/ernesto-spark/Files/chapter_10 folder.
 
 userdata1.parquet - http://bit.ly/2kfIhJ4
 
@@ -97,7 +97,7 @@ Enter into the paste mode and execute the following code.
  ```
 val  parquetData = spark
 .read
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/userdata1.parquet")
+.load("/headless/Desktop/ernesto-spark/Files/chapter_10/userdata1.parquet")
 ```
 
 Please see that we need not mention the format here as Parquet is default file format in Spark. However, you may explicitly mention the format as we did in the previous tasks if you desire so.
@@ -111,20 +111,20 @@ You should see the following output when you call the show method on the datafra
 
 **Step 3:** Let us write this back to the filesystem in Parquet format.
 
-`parquetData.write.save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output4")`
+`parquetData.write.save("/headless/Desktop/ernesto-spark/Files/chapter_10/output4")`
  
 #### Output
 We can check if the save was successful by simply running the cat command from a new terminal as shown below. However, you will not be able to read the file correctly as it is not human readable.
 
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output4/part*`
+`cat /headless/Desktop/ernesto-spark/Files/chapter_10/output4/part*`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
 
 **Step 4:** We can also save a parquet file using compression as shown below.
 
-`parquetData.write.option("codec", "gzip").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output5")`
+`parquetData.write.option("codec", "gzip").save("/headless/Desktop/ernesto-spark/Files/chapter_10/output5")`
 
 Task is complete!
 
@@ -142,7 +142,7 @@ spark.read
 
 ## Task: ORC Files
 
-**Step 1:** Download the file userdata1_orc from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
+**Step 1:** Download the file userdata1_orc from the URL below and save it to the /headless/Desktop/ernesto-spark/Files/chapter_10 folder.
 
 userdata1.orc - http://bit.ly/2kfQi0J
 
@@ -159,7 +159,7 @@ Enter into the paste mode and execute the following code.
 val orcData = spark
 .read
 .format("orc")
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/userdata1_orc")
+.load("/headless/Desktop/ernesto-spark/Files/chapter_10/userdata1_orc")
 ```
 
 
@@ -173,13 +173,13 @@ You should see the following output when you call the show method on the datafra
 
 **Step 3:** We can now simply write to an ORC format similar to what we have been doing with other file formats so far.
 
-`orcData.write.format("orc").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output6")`
+`orcData.write.format("orc").save("/headless/Desktop/ernesto-spark/Files/chapter_10/output6")`
 
 
 #### Output
 Similar to Parquet, ORC is also not human readable and you will only see gibberish data when used the cat command as shown below.
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output6/part*`
+`cat /headless/Desktop/ernesto-spark/Files/chapter_10/output6/part*`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 

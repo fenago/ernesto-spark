@@ -22,7 +22,7 @@ object createDS {
       .read
       .format("csv")
       .options(Map("header" -> "true", "inferSchema" -> "true"))
-      .load("/home/jovyan/work/ernesto-spark/Files/chapter_8/ratings-head.csv")
+      .load("/headless/Desktop/ernesto-spark/Files/chapter_8/ratings-head.csv")
       .as[Movies]
       .cache()
 

@@ -66,9 +66,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 You will get following output.
 
 ```	
-[info] Loading project definition from /home/jovyan/work/ernesto-spark/project	
+[info] Loading project definition from /headless/Desktop/ernesto-spark/project	
 [info] Loading settings for project apache-spark from build.sbt ...	
-[info] Set current project to Spark (in build file:/home/jovyan/work/ernesto-spark/)	
+[info] Set current project to Spark (in build file:/headless/Desktop/ernesto-spark/)	
 [info] 1.3.2
 ```
 

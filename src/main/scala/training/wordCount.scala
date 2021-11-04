@@ -12,7 +12,7 @@ object wordCount {
     Logger.getLogger("Org").setLevel(Level.ERROR)
 
     val sc = new SparkContext("local[*]", "WordCount")
-    val data = sc.textFile("/home/jovyan/work/ernesto-spark/Files/chapter_4/treasure_island.txt")
+    val data = sc.textFile("/headless/Desktop/ernesto-spark/Files/chapter_4/treasure_island.txt")
     val words = data.flatMap(lines => lines.split(" "))
     val wordskv = words.map(word => (word,1))
     val count = wordskv.reduceByKey((x,y) => x + y)

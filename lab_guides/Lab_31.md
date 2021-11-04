@@ -64,7 +64,7 @@ CSV files support compression, are human readable and are splittable. However, C
 
 Let us now look at reading and writing CSV files to Spark. We have been reading and writing CSV files in the previous chapters. However, let us also see some of many options that can be used while reading and writing CSV files.
 
-**Step 1:** Download the file ratings.csv from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
+**Step 1:** Download the file ratings.csv from the URL below and save it to the /headless/Desktop/ernesto-spark/Files/chapter_10 folder.
 
 ratings.csv - http://bit.ly/2L8IEBS
 
@@ -88,7 +88,7 @@ val data = spark
 .option("InferSchema", "true")
 .option("header", "false")
 .option("nullValue", "Null")
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.csv")
+.load("/headless/Desktop/ernesto-spark/Files/chapter_10/ratings.csv")
 ```
 
 We have used a new option here which is called NullValue. This will replace all the null values with the provided string, which is Null in this case. The default is "". Please check the references section for all the options that can be used while reading or writing CSV files. All the options can be used in this way or inside a map object.
@@ -114,7 +114,7 @@ val  dataNew = spark
 , "header" -> "false"
 , "nullValue" -> "Null"
 , "mode" -> "FAILFAST"))
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/ratings.csv")
+.load("/headless/Desktop/ernesto-spark/Files/chapter_10/ratings.csv")
 ```
 
 
@@ -130,14 +130,14 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-`dataNew.write.format("csv").option("sep", "|").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output2")`
+`dataNew.write.format("csv").option("sep", "|").save("/headless/Desktop/ernesto-spark/Files/chapter_10/output2")`
 
 Here, we have used an option called sep which replaces the delimiter from comma to a pipe.
 
 **Step 5:** Let us check if the save was successful as we desired.
 
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output2/part*`
+`cat /headless/Desktop/ernesto-spark/Files/chapter_10/output2/part*`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
@@ -153,7 +153,7 @@ Similar to previous taks, let us read and write JSON files. We shall be reading 
 
 JSON is also one of the popular file formats around which stands for JavaScrit Object Notation. JSON is compressable, splittable and human readable. It is also nested and supports complex data structures. With Spark, we can load a single line JSON and also a multi-line JSON. All we need to do is specify an option for multi-line JSON. However, it is recommend to use single line JSON whenever possible.
 
-**Step 1:** Download the file example_1.json from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
+**Step 1:** Download the file example_1.json from the URL below and save it to the /headless/Desktop/ernesto-spark/Files/chapter_10 folder.
 
 example_1.json - http://bit.ly/2lRFI06
 
@@ -171,7 +171,7 @@ Enter into the paste mode and execute the following code.
 val  jsonData = spark.read
 .format("json")
 .option("multiLine", "false")
-.load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_1.json")
+.load("/headless/Desktop/ernesto-spark/Files/chapter_10/example_1.json")
 ```
 
 
@@ -182,7 +182,7 @@ val  jsonData = spark.read
 
 ![](./Screenshots/Chapter_10/Selection_011.png)
 
-**Step 4:** Let us now load the multi line JSON file. Download the file example_2.json from the URL below and save it to the /home/jovyan/work/ernesto-spark/Files/chapter_10 folder.
+**Step 4:** Let us now load the multi line JSON file. Download the file example_2.json from the URL below and save it to the /headless/Desktop/ernesto-spark/Files/chapter_10 folder.
 
 example_2.json - http://bit.ly/2lL3IST
 
@@ -200,19 +200,19 @@ Enter into the paste mode and execute the following code.
 val  multiJson = spark.read
     .format("json")
     .option("multiLine", "true")
-    .load("/home/jovyan/work/ernesto-spark/Files/chapter_10/example_2.json")
+    .load("/headless/Desktop/ernesto-spark/Files/chapter_10/example_2.json")
 ```
 
 
 **Step 6:** Let us now write this dataframe to the filsesystem.
 
-`multiJson.write.format("json").save("/home/jovyan/work/ernesto-spark/Files/chapter_10/output3")`
+`multiJson.write.format("json").save("/headless/Desktop/ernesto-spark/Files/chapter_10/output3")`
  
 #### Output
 You can check the output by running the following command from a new terminal.
 
 
-`cat /home/jovyan/work/ernesto-spark/Files/chapter_10/output3/part*`
+`cat /headless/Desktop/ernesto-spark/Files/chapter_10/output3/part*`
 
 Run above command in **terminal 2**. You can also open New terminal by Clicking `File` > `New` > `Terminal` from the top menu.
 
